@@ -77,17 +77,15 @@ public class InttegroClientTests
     public void PurchaseIntentExposesNestedResponseTypes()
     {
         const string json = """
-            {"activity":{"recent":[{"created_at":"2026-09-09T12:01:00Z","id":"saleevt_123","purchase_intent_id":"sale_123","type":"viewed","visitor":{"ip_address":"203.0.113.7"}}]},"allow_variants":false,"created_at":"2026-09-09T12:00:00Z","id":"sale_123","merchant":{"organization_name":"Tea House Ltd"},"product":{"active":true,"created_at":"2026-09-09T11:00:00Z","dimensions":{"digital":{"bytes":1024}},"id":"prod_123","name":"Tea guide","type":"digital"},"quantity":{"min":1},"status":"active","usage":{"order":{"created_at":"2026-09-09T12:02:00Z","id":"or_123"},"single_use":true}}
+            {"allow_variants":false,"created_at":"2026-09-09T12:00:00Z","id":"sale_123","merchant":{"organization_name":"Tea House Ltd"},"product":{"active":true,"created_at":"2026-09-09T11:00:00Z","dimensions":{"digital":{"bytes":1024}},"id":"prod_123","name":"Tea guide","type":"digital"},"quantity":{"min":1},"status":"active","usage":{"order":{"created_at":"2026-09-09T12:02:00Z","id":"or_123"},"single_use":true}}
             """;
 
         var intent = JsonSerializer.Deserialize<PurchaseIntent>(json)!;
 
-        Assert.Equal("203.0.113.7", intent.Activity!.Recent![0].Visitor!.IpAddress);
         Assert.Equal("Tea House Ltd", intent.Merchant!.OrganizationName);
         Assert.Equal(1024, intent.Product!.Dimensions!.Digital!.Bytes);
         Assert.Equal("or_123", intent.Usage.Order!.Id);
         Assert.Equal(PurchaseIntentStatus.Active, intent.Status);
-        Assert.Equal(PurchaseIntentActivityType.Viewed, intent.Activity.Recent[0].Type);
         Assert.Equal(DateTimeOffset.Parse("2026-09-09T12:00:00Z"), intent.CreatedAt);
     }
 

@@ -69,9 +69,6 @@ public enum ProductShipmentInputType { [EnumMember(Value = "delivery")] Delivery
 [JsonConverter(typeof(WireEnumJsonConverter<PurchaseIntentStatus>))]
 public enum PurchaseIntentStatus { [EnumMember(Value = "active")] Active, [EnumMember(Value = "expired")] Expired, [EnumMember(Value = "inactive")] Inactive, [EnumMember(Value = "used")] Used }
 
-[JsonConverter(typeof(WireEnumJsonConverter<PurchaseIntentActivityType>))]
-public enum PurchaseIntentActivityType { [EnumMember(Value = "expired_viewed")] ExpiredViewed, [EnumMember(Value = "order_created")] OrderCreated, [EnumMember(Value = "payment_failed")] PaymentFailed, [EnumMember(Value = "payment_started")] PaymentStarted, [EnumMember(Value = "viewed")] Viewed }
-
 [JsonConverter(typeof(WireEnumJsonConverter<MessageTemplateChannel>))]
 public enum MessageTemplateChannel { [EnumMember(Value = "sms")] Sms, [EnumMember(Value = "email")] Email }
 
