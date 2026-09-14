@@ -141,7 +141,11 @@ public class InttegroClientTests
         await client.Orders.PageAsync(new { });
 
         await client.Refunds.CreateAsync(refundRequest);
-        await client.Refunds.CancelAsync(new CancelRefundRequest { RefundId = "rf_1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcd" });
+        await client.Refunds.CancelAsync(new CancelRefundRequest
+        {
+            RefundId = "rf_1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcd",
+            Reason = "Customer no longer wants the refund"
+        });
         await client.Refunds.LookupAsync("rf_1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcd");
         await client.Refunds.PageAsync(new PageRefundsRequest { PageNumber = 1 });
 
