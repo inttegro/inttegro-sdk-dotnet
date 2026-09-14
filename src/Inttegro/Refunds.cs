@@ -54,6 +54,70 @@ public sealed class RefundFailure
     public bool Retryable { get; set; }
 }
 
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
+[JsonDerivedType(typeof(RefundOfflineSettlement), "offline")]
+[JsonDerivedType(typeof(RefundPaymentMethodSettlement), "payment_method")]
+public abstract class RefundSettlement { }
+
+public sealed class RefundOfflineSettlement : RefundSettlement { }
+
+public sealed class RefundPaymentMethodSettlement : RefundSettlement
+{
+    [JsonPropertyName("payment_method")]
+    public RefundSettlementPaymentMethod PaymentMethod { get; set; } = null!;
+}
+
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
+[JsonDerivedType(typeof(RefundSettlementMobileMoneyPaymentMethod), "mobile_money")]
+[JsonDerivedType(typeof(RefundSettlementBankAccountPaymentMethod), "bank_account")]
+public abstract class RefundSettlementPaymentMethod
+{
+    [JsonPropertyName("id")]
+    public string Id { get; set; } = string.Empty;
+}
+
+public sealed class RefundSettlementMobileMoneyPaymentMethod : RefundSettlementPaymentMethod
+{
+    [JsonPropertyName("mobile_money")]
+    public RefundSettlementMobileMoney MobileMoney { get; set; } = null!;
+}
+
+public sealed class RefundSettlementMobileMoney
+{
+    [JsonPropertyName("network")]
+    public string Network { get; set; } = string.Empty;
+
+    [JsonPropertyName("account_number")]
+    public string AccountNumber { get; set; } = string.Empty;
+
+    [JsonPropertyName("last4")]
+    public string Last4 { get; set; } = string.Empty;
+}
+
+public sealed class RefundSettlementBankAccountPaymentMethod : RefundSettlementPaymentMethod
+{
+    [JsonPropertyName("bank_account")]
+    public RefundSettlementBankAccount BankAccount { get; set; } = null!;
+}
+
+public sealed class RefundSettlementBankAccount
+{
+    [JsonPropertyName("type")]
+    public string Type { get; set; } = "ghana_bank_account";
+
+    [JsonPropertyName("ghana_bank_account")]
+    public RefundSettlementGhanaBankAccount GhanaBankAccount { get; set; } = null!;
+}
+
+public sealed class RefundSettlementGhanaBankAccount
+{
+    [JsonPropertyName("account_number")]
+    public string AccountNumber { get; set; } = string.Empty;
+
+    [JsonPropertyName("last4")]
+    public string Last4 { get; set; } = string.Empty;
+}
+
 public sealed class CreateRefundLineItem
 {
     [JsonPropertyName("order_line_item_id")]
@@ -151,6 +215,9 @@ public sealed class Refund
 
     [JsonPropertyName("order_amount")]
     public Amount? OrderAmount { get; set; }
+
+    [JsonPropertyName("settlement")]
+    public RefundSettlement Settlement { get; set; } = null!;
 
     [JsonPropertyName("status")]
     public RefundStatus Status { get; set; }
