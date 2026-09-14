@@ -28,6 +28,32 @@ public enum RefundStatus
     Succeeded
 }
 
+[JsonConverter(typeof(RefundFailureReasonJsonConverter))]
+public enum RefundFailureReason
+{
+    InsufficientBalance,
+    OriginalPaymentMethodUnavailable,
+    OriginalPaymentNotRefundable,
+    RefundNotSupported,
+    AmountNotSupported,
+    RefundDeclined,
+    RefundNotPermitted,
+    TemporarilyUnavailable,
+    Unknown
+}
+
+public sealed class RefundFailure
+{
+    [JsonPropertyName("reason")]
+    public RefundFailureReason Reason { get; set; }
+
+    [JsonPropertyName("detail")]
+    public string? Detail { get; set; }
+
+    [JsonPropertyName("retryable")]
+    public bool Retryable { get; set; }
+}
+
 public sealed class CreateRefundLineItem
 {
     [JsonPropertyName("order_line_item_id")]
@@ -159,6 +185,9 @@ public sealed class Refund
     [JsonPropertyName("failed_at")]
     public DateTimeOffset? FailedAt { get; set; }
 
+    [JsonPropertyName("failure")]
+    public RefundFailure? Failure { get; set; }
+
     [JsonPropertyName("canceled_at")]
     public DateTimeOffset? CanceledAt { get; set; }
 
@@ -208,6 +237,39 @@ public sealed class RefundReasonJsonConverter : JsonConverter<RefundReason>
             RefundReason.ItemNotAsDescribed => "item_not_as_described",
             RefundReason.Custom => "custom",
             _ => throw new JsonException($"Unknown refund reason '{value}'.")
+        });
+}
+
+public sealed class RefundFailureReasonJsonConverter : JsonConverter<RefundFailureReason>
+{
+    public override RefundFailureReason Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) =>
+        reader.GetString() switch
+        {
+            "insufficient_balance" => RefundFailureReason.InsufficientBalance,
+            "original_payment_method_unavailable" => RefundFailureReason.OriginalPaymentMethodUnavailable,
+            "original_payment_not_refundable" => RefundFailureReason.OriginalPaymentNotRefundable,
+            "refund_not_supported" => RefundFailureReason.RefundNotSupported,
+            "amount_not_supported" => RefundFailureReason.AmountNotSupported,
+            "refund_declined" => RefundFailureReason.RefundDeclined,
+            "refund_not_permitted" => RefundFailureReason.RefundNotPermitted,
+            "temporarily_unavailable" => RefundFailureReason.TemporarilyUnavailable,
+            "unknown" => RefundFailureReason.Unknown,
+            var value => throw new JsonException($"Unknown refund failure reason '{value}'.")
+        };
+
+    public override void Write(Utf8JsonWriter writer, RefundFailureReason value, JsonSerializerOptions options) =>
+        writer.WriteStringValue(value switch
+        {
+            RefundFailureReason.InsufficientBalance => "insufficient_balance",
+            RefundFailureReason.OriginalPaymentMethodUnavailable => "original_payment_method_unavailable",
+            RefundFailureReason.OriginalPaymentNotRefundable => "original_payment_not_refundable",
+            RefundFailureReason.RefundNotSupported => "refund_not_supported",
+            RefundFailureReason.AmountNotSupported => "amount_not_supported",
+            RefundFailureReason.RefundDeclined => "refund_declined",
+            RefundFailureReason.RefundNotPermitted => "refund_not_permitted",
+            RefundFailureReason.TemporarilyUnavailable => "temporarily_unavailable",
+            RefundFailureReason.Unknown => "unknown",
+            _ => throw new JsonException($"Unknown refund failure reason '{value}'.")
         });
 }
 
