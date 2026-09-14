@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class InttegroClient | Inttegro .NET SDK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class InttegroClient | Inttegro .NET SDK ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Inttegro .NET SDK">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Inttegro.InttegroClient">
+
+
+
+  <h1 id="Inttegro_InttegroClient" data-uid="Inttegro.InttegroClient" class="text-break">Class InttegroClient</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">InttegroClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Inttegro.html">Inttegro</a></h6>
+  <h6><strong>Assembly</strong>: Inttegro.dll</h6>
+  <h5 id="Inttegro_InttegroClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InttegroClient : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient__ctor_System_String_System_String_System_Nullable_System_TimeSpan__System_Net_Http_HttpClient_System_Boolean_Inttegro_Diagnostics_ErrorReporter_Inttegro_Diagnostics_ErrorReportingPolicy_.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.%23ctor(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.TimeSpan%7D%2CSystem.Net.Http.HttpClient%2CSystem.Boolean%2CInttegro.Diagnostics.ErrorReporter%2CInttegro.Diagnostics.ErrorReportingPolicy)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L41">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient__ctor_" data-uid="Inttegro.InttegroClient.#ctor*"></a>
+  <h4 id="Inttegro_InttegroClient__ctor_System_String_System_String_System_Nullable_System_TimeSpan__System_Net_Http_HttpClient_System_Boolean_Inttegro_Diagnostics_ErrorReporter_Inttegro_Diagnostics_ErrorReportingPolicy_" data-uid="Inttegro.InttegroClient.#ctor(System.String,System.String,System.Nullable{System.TimeSpan},System.Net.Http.HttpClient,System.Boolean,Inttegro.Diagnostics.ErrorReporter,Inttegro.Diagnostics.ErrorReportingPolicy)">InttegroClient(string, string?, TimeSpan?, HttpClient?, bool, ErrorReporter?, ErrorReportingPolicy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InttegroClient(string apiKey, string? baseUrl = null, TimeSpan? timeout = null, HttpClient? httpClient = null, bool telemetryEnabled = true, ErrorReporter? errorReporter = null, ErrorReportingPolicy errorReportingPolicy = ErrorReportingPolicy.Unexpected)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">baseUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">telemetryEnabled</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.ErrorReporter.html">ErrorReporter</a></td>
+        <td><span class="parametername">errorReporter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.ErrorReportingPolicy.html">ErrorReportingPolicy</a></td>
+        <td><span class="parametername">errorReportingPolicy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_ActivitySource.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.ActivitySource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Inttegro_InttegroClient_ActivitySource" data-uid="Inttegro.InttegroClient.ActivitySource">ActivitySource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ActivitySource ActivitySource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.activitysource">ActivitySource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_ActivitySourceName.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.ActivitySourceName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L11">View Source</a>
+  </span>
+  <h4 id="Inttegro_InttegroClient_ActivitySourceName" data-uid="Inttegro.InttegroClient.ActivitySourceName">ActivitySourceName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ActivitySourceName = &quot;Inttegro&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Version.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Version%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L10">View Source</a>
+  </span>
+  <h4 id="Inttegro_InttegroClient_Version" data-uid="Inttegro.InttegroClient.Version">Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Version = &quot;7.0.0&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Apps.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Apps%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L34">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Apps_" data-uid="Inttegro.InttegroClient.Apps*"></a>
+  <h4 id="Inttegro_InttegroClient_Apps" data-uid="Inttegro.InttegroClient.Apps">Apps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppsResource Apps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.AppsResource.html">AppsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_BalanceTransactions.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.BalanceTransactions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L21">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_BalanceTransactions_" data-uid="Inttegro.InttegroClient.BalanceTransactions*"></a>
+  <h4 id="Inttegro_InttegroClient_BalanceTransactions" data-uid="Inttegro.InttegroClient.BalanceTransactions">BalanceTransactions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BalanceTransactionsResource BalanceTransactions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.BalanceTransactionsResource.html">BalanceTransactionsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Balances.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Balances%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L37">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Balances_" data-uid="Inttegro.InttegroClient.Balances*"></a>
+  <h4 id="Inttegro_InttegroClient_Balances" data-uid="Inttegro.InttegroClient.Balances">Balances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BalancesResource Balances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.BalancesResource.html">BalancesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Broadcasts.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Broadcasts%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L31">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Broadcasts_" data-uid="Inttegro.InttegroClient.Broadcasts*"></a>
+  <h4 id="Inttegro_InttegroClient_Broadcasts" data-uid="Inttegro.InttegroClient.Broadcasts">Broadcasts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BroadcastsResource Broadcasts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.BroadcastsResource.html">BroadcastsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Chimes.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Chimes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L29">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Chimes_" data-uid="Inttegro.InttegroClient.Chimes*"></a>
+  <h4 id="Inttegro_InttegroClient_Chimes" data-uid="Inttegro.InttegroClient.Chimes">Chimes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChimesResource Chimes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.ChimesResource.html">ChimesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Customers.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Customers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L26">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Customers_" data-uid="Inttegro.InttegroClient.Customers*"></a>
+  <h4 id="Inttegro_InttegroClient_Customers" data-uid="Inttegro.InttegroClient.Customers">Customers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomersResource Customers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.CustomersResource.html">CustomersResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_FileLinks.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.FileLinks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L25">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_FileLinks_" data-uid="Inttegro.InttegroClient.FileLinks*"></a>
+  <h4 id="Inttegro_InttegroClient_FileLinks" data-uid="Inttegro.InttegroClient.FileLinks">FileLinks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileLinksResource FileLinks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.FileLinksResource.html">FileLinksResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_FileReferences.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.FileReferences%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L24">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_FileReferences_" data-uid="Inttegro.InttegroClient.FileReferences*"></a>
+  <h4 id="Inttegro_InttegroClient_FileReferences" data-uid="Inttegro.InttegroClient.FileReferences">FileReferences</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileReferencesResource FileReferences { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.FileReferencesResource.html">FileReferencesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Files.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Files%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L23">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Files_" data-uid="Inttegro.InttegroClient.Files*"></a>
+  <h4 id="Inttegro_InttegroClient_Files" data-uid="Inttegro.InttegroClient.Files">Files</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilesResource Files { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.FilesResource.html">FilesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_FinancialAccounts.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.FinancialAccounts%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L22">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_FinancialAccounts_" data-uid="Inttegro.InttegroClient.FinancialAccounts*"></a>
+  <h4 id="Inttegro_InttegroClient_FinancialAccounts" data-uid="Inttegro.InttegroClient.FinancialAccounts">FinancialAccounts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FinancialAccountsResource FinancialAccounts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.FinancialAccountsResource.html">FinancialAccountsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Keys.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Keys%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L35">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Keys_" data-uid="Inttegro.InttegroClient.Keys*"></a>
+  <h4 id="Inttegro_InttegroClient_Keys" data-uid="Inttegro.InttegroClient.Keys">Keys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeysResource Keys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.KeysResource.html">KeysResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_MessageTemplates.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.MessageTemplates%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L32">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_MessageTemplates_" data-uid="Inttegro.InttegroClient.MessageTemplates*"></a>
+  <h4 id="Inttegro_InttegroClient_MessageTemplates" data-uid="Inttegro.InttegroClient.MessageTemplates">MessageTemplates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageTemplatesResource MessageTemplates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.MessageTemplatesResource.html">MessageTemplatesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Orders.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Orders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L17">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Orders_" data-uid="Inttegro.InttegroClient.Orders*"></a>
+  <h4 id="Inttegro_InttegroClient_Orders" data-uid="Inttegro.InttegroClient.Orders">Orders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrdersResource Orders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.OrdersResource.html">OrdersResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Otp.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Otp%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L33">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Otp_" data-uid="Inttegro.InttegroClient.Otp*"></a>
+  <h4 id="Inttegro_InttegroClient_Otp" data-uid="Inttegro.InttegroClient.Otp">Otp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OtpResource Otp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.OtpResource.html">OtpResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_PaymentMethods.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.PaymentMethods%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L19">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_PaymentMethods_" data-uid="Inttegro.InttegroClient.PaymentMethods*"></a>
+  <h4 id="Inttegro_InttegroClient_PaymentMethods" data-uid="Inttegro.InttegroClient.PaymentMethods">PaymentMethods</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaymentMethodsResource PaymentMethods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.PaymentMethodsResource.html">PaymentMethodsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Payouts.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Payouts%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L20">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Payouts_" data-uid="Inttegro.InttegroClient.Payouts*"></a>
+  <h4 id="Inttegro_InttegroClient_Payouts" data-uid="Inttegro.InttegroClient.Payouts">Payouts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PayoutsResource Payouts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.PayoutsResource.html">PayoutsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Prices.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Prices%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L28">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Prices_" data-uid="Inttegro.InttegroClient.Prices*"></a>
+  <h4 id="Inttegro_InttegroClient_Prices" data-uid="Inttegro.InttegroClient.Prices">Prices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PricesResource Prices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.PricesResource.html">PricesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Products.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Products%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L27">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Products_" data-uid="Inttegro.InttegroClient.Products*"></a>
+  <h4 id="Inttegro_InttegroClient_Products" data-uid="Inttegro.InttegroClient.Products">Products</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProductsResource Products { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.ProductsResource.html">ProductsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_PurchaseIntents.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.PurchaseIntents%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L39">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_PurchaseIntents_" data-uid="Inttegro.InttegroClient.PurchaseIntents*"></a>
+  <h4 id="Inttegro_InttegroClient_PurchaseIntents" data-uid="Inttegro.InttegroClient.PurchaseIntents">PurchaseIntents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PurchaseIntentsResource PurchaseIntents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.PurchaseIntentsResource.html">PurchaseIntentsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Refunds.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Refunds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L18">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Refunds_" data-uid="Inttegro.InttegroClient.Refunds*"></a>
+  <h4 id="Inttegro_InttegroClient_Refunds" data-uid="Inttegro.InttegroClient.Refunds">Refunds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RefundsResource Refunds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.RefundsResource.html">RefundsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Schedules.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Schedules%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L30">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Schedules_" data-uid="Inttegro.InttegroClient.Schedules*"></a>
+  <h4 id="Inttegro_InttegroClient_Schedules" data-uid="Inttegro.InttegroClient.Schedules">Schedules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SchedulesResource Schedules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.SchedulesResource.html">SchedulesResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Spec.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Spec%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L36">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Spec_" data-uid="Inttegro.InttegroClient.Spec*"></a>
+  <h4 id="Inttegro_InttegroClient_Spec" data-uid="Inttegro.InttegroClient.Spec">Spec</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpecResource Spec { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.SpecResource.html">SpecResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_UploadRequests.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.UploadRequests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L38">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_UploadRequests_" data-uid="Inttegro.InttegroClient.UploadRequests*"></a>
+  <h4 id="Inttegro_InttegroClient_UploadRequests" data-uid="Inttegro.InttegroClient.UploadRequests">UploadRequests</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UploadRequestsResource UploadRequests { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Resources.UploadRequestsResource.html">UploadRequestsResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient_Dispose.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L89">View Source</a>
+  </span>
+  <a id="Inttegro_InttegroClient_Dispose_" data-uid="Inttegro.InttegroClient.Dispose*"></a>
+  <h4 id="Inttegro_InttegroClient_Dispose" data-uid="Inttegro.InttegroClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v8.0.0/apiSpec/new?filename=Inttegro_InttegroClient.md&amp;value=---%0Auid%3A%20Inttegro.InttegroClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v8.0.0/src/Inttegro/InttegroClient.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
