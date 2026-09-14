@@ -10,7 +10,8 @@ public sealed class PayoutSetDestinationsRequest
     public PayoutDestinations? Destinations { get; set; }
 }
 
-public sealed class PayoutSettings
+/// <summary>Complete payout settings returned by the settings endpoint.</summary>
+public sealed class PayoutSettingsLookup
 {
     [JsonPropertyName("fx_enabled")]
     public bool? FxEnabled { get; set; }
@@ -19,10 +20,27 @@ public sealed class PayoutSettings
     public PayoutDestinations? Destinations { get; set; }
 
     [JsonPropertyName("schedule")]
-    public PayoutSchedule? Schedule { get; set; }
+    public PayoutSettingsLookupSchedule? Schedule { get; set; }
 }
 
-public sealed class PayoutSchedule
+/// <summary>Payout settings fields returned after a settings mutation.</summary>
+public sealed class PayoutSettingsMutation
+{
+    [JsonPropertyName("destinations")]
+    public PayoutDestinations? Destinations { get; set; }
+
+    [JsonPropertyName("fx_enabled")]
+    public bool? FxEnabled { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("schedule")]
+    public PayoutSettingsMutationSchedule? Schedule { get; set; }
+}
+
+/// <summary>Active payout schedule returned by the settings endpoint.</summary>
+public sealed class PayoutSettingsLookupSchedule
 {
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -40,10 +58,11 @@ public sealed class PayoutSchedule
     public string? Description { get; set; }
 
     [JsonPropertyName("aging_spec")]
-    public PayoutAgingSpec? AgingSpec { get; set; }
+    public PayoutSettingsLookupScheduleAgingSpec? AgingSpec { get; set; }
 }
 
-public sealed class PayoutAgingSpec
+/// <summary>Rules that determine when balance transactions become eligible for payout.</summary>
+public sealed class PayoutSettingsLookupScheduleAgingSpec
 {
     [JsonPropertyName("t_plus")]
     public string? TPlus { get; set; }
@@ -53,6 +72,47 @@ public sealed class PayoutAgingSpec
 
     [JsonPropertyName("abide")]
     public string? Abide { get; set; }
+}
+
+/// <summary>Updated payout schedule returned after a settings mutation.</summary>
+public sealed class PayoutSettingsMutationSchedule
+{
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("interval")]
+    public string? Interval { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("schedule_on")]
+    public string? ScheduleOn { get; set; }
+
+    [JsonPropertyName("spec")]
+    public PayoutSettingsMutationScheduleSpec? Spec { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Aging rule returned after a payout settings mutation.</summary>
+public sealed class PayoutSettingsMutationScheduleSpec
+{
+    [JsonPropertyName("abide")]
+    public string? Abide { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
+
+    [JsonPropertyName("t_plus")]
+    public string? TPlus { get; set; }
 }
 
 public sealed class PayoutPageRequest
@@ -99,56 +159,71 @@ public sealed class PayoutPage
 
 public sealed class Payout
 {
-    [JsonPropertyName("id")]
-    public string? Id { get; set; }
-
-    [JsonPropertyName("application_id")]
-    public string? ApplicationId { get; set; }
-
-    [JsonPropertyName("destination_id")]
-    public string? DestinationId { get; set; }
-
     [JsonPropertyName("amount")]
     public Amount? Amount { get; set; }
 
-    [JsonPropertyName("max_amount")]
-    public Amount? MaxAmount { get; set; }
-
-    [JsonPropertyName("status")]
-    public string? Status { get; set; }
-
-    [JsonPropertyName("initiated_by")]
-    public string? InitiatedBy { get; set; }
-
-    [JsonPropertyName("latest_attempt_id")]
-    public string? LatestAttemptId { get; set; }
-
-    [JsonPropertyName("latest_error")]
-    public PayoutError? LatestError { get; set; }
-
-    [JsonPropertyName("initiated_at")]
-    public DateTimeOffset? InitiatedAt { get; set; }
-
-    [JsonPropertyName("execute_after")]
-    public DateTimeOffset? ExecuteAfter { get; set; }
-
-    [JsonPropertyName("scheduled_at")]
-    public DateTimeOffset? ScheduledAt { get; set; }
+    [JsonPropertyName("balance_transactions")]
+    public List<string>? BalanceTransactions { get; set; }
 
     [JsonPropertyName("canceled_at")]
     public DateTimeOffset? CanceledAt { get; set; }
 
-    [JsonPropertyName("executed_at")]
-    public DateTimeOffset? ExecutedAt { get; set; }
+    [JsonPropertyName("custom_data")]
+    public CustomData? CustomData { get; set; }
+
+    [JsonPropertyName("destination_id")]
+    public string? DestinationId { get; set; }
+
+    [JsonPropertyName("error")]
+    public PayoutError? Error { get; set; }
+
+    [JsonPropertyName("execute_after")]
+    public DateTimeOffset? ExecuteAfter { get; set; }
+
+    [JsonPropertyName("executed_by")]
+    public string? ExecutedBy { get; set; }
 
     [JsonPropertyName("expected_at")]
     public DateTimeOffset? ExpectedAt { get; set; }
 
+    [JsonPropertyName("failed_at")]
+    public DateTimeOffset? FailedAt { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("initiated_at")]
+    public DateTimeOffset? InitiatedAt { get; set; }
+
+    [JsonPropertyName("initiated_by")]
+    public string? InitiatedBy { get; set; }
+
+    [JsonPropertyName("max_amount")]
+    public Amount? MaxAmount { get; set; }
+
+    [JsonPropertyName("reference")]
+    public string? Reference { get; set; }
+
+    [JsonPropertyName("schedule_id")]
+    public string? ScheduleId { get; set; }
+
+    [JsonPropertyName("scheduled_at")]
+    public DateTimeOffset? ScheduledAt { get; set; }
+
+    [JsonPropertyName("scheduled_by")]
+    public string? ScheduledBy { get; set; }
+
+    [JsonPropertyName("sent_at")]
+    public DateTimeOffset? SentAt { get; set; }
+
+    [JsonPropertyName("source_id")]
+    public string? SourceId { get; set; }
+
+    [JsonPropertyName("status")]
+    public PayoutStatus Status { get; set; }
+
     [JsonPropertyName("succeeded_at")]
     public DateTimeOffset? SucceededAt { get; set; }
-
-    [JsonPropertyName("balance_transaction_ids")]
-    public List<string>? BalanceTransactionIds { get; set; }
 }
 
 public sealed class PayoutError

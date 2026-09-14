@@ -228,27 +228,12 @@ internal sealed class MessageHeadersJsonConverter : SemanticDictionaryJsonConver
     protected override void Add(MessageHeaders collection, string key, string value) => collection.Set(key, value);
 }
 
-[JsonConverter(typeof(PayoutDestinationsJsonConverter))]
-public sealed class PayoutDestinations : IReadOnlyDictionary<string, string>
+/// <summary>Supported currency-to-financial-account payout assignments.</summary>
+public sealed class PayoutDestinations
 {
-    private readonly Dictionary<string, string> _values = new();
-    internal IDictionary<string, string> MutableValues => _values;
-    public PayoutDestinations Set(string currency, string financialAccountId) { if (string.IsNullOrWhiteSpace(currency)) throw new ArgumentException("Currency cannot be blank.", nameof(currency)); if (string.IsNullOrWhiteSpace(financialAccountId)) throw new ArgumentException("Financial account ID cannot be blank.", nameof(financialAccountId)); _values[currency] = financialAccountId; return this; }
-    public bool Remove(string currency) => _values.Remove(currency);
-    public string this[string key] => _values[key];
-    public IEnumerable<string> Keys => _values.Keys;
-    public IEnumerable<string> Values => _values.Values;
-    public int Count => _values.Count;
-    public bool ContainsKey(string key) => _values.ContainsKey(key);
-    public bool TryGetValue(string key, out string value) => _values.TryGetValue(key, out value!);
-    public IEnumerator<KeyValuePair<string, string>> GetEnumerator() => _values.GetEnumerator();
-    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
-}
-
-internal sealed class PayoutDestinationsJsonConverter : SemanticDictionaryJsonConverter<PayoutDestinations, string>
-{
-    protected override IDictionary<string, string> Values(PayoutDestinations collection) => collection.MutableValues;
-    protected override void Add(PayoutDestinations collection, string key, string value) => collection.Set(key, value);
+    /// <summary>Financial account that receives Ghana cedi payouts.</summary>
+    [JsonPropertyName("ghs")]
+    public string? Ghs { get; set; }
 }
 
 [JsonConverter(typeof(FileMetadataJsonConverter))]
