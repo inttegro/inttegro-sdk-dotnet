@@ -174,15 +174,15 @@ public class InttegroClientTests
         await client.PaymentMethods.DeleteAsync("pm_1");
         await client.PaymentMethods.SettingsAsync();
 
-        await client.Payouts.SetDestinationsAsync(new { ghs = "dest" });
+        await client.Payouts.SetDestinationsAsync(new PayoutDestinations { Ghs = "dest" });
         await client.Payouts.SettingsAsync();
         await client.Payouts.DisableAutomaticAsync();
         await client.Payouts.EnableAutomaticAsync();
         await client.Payouts.EnableFXAsync();
         await client.Payouts.DisableFXAsync();
-        await client.Payouts.PageAsync(new { });
+        await client.Payouts.PageAsync(new PayoutPageRequest { PageNumber = 1 });
         await client.Payouts.LookupAsync("po_1");
-        await client.Payouts.ScheduleAsync(new { destination_id = "fa_1", max_amount = 1000, reference = "PAYOUT-1" });
+        await client.Payouts.ScheduleAsync(new SchedulePayoutRequest { DestinationId = "fa_1", MaxAmount = 1000, Reference = "PAYOUT-1" });
         await client.Payouts.CancelAsync("po_1");
 
         await client.BalanceTransactions.LookupAsync("txn_1");

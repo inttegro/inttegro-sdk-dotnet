@@ -6,6 +6,39 @@ namespace Inttegro.Tests;
 public sealed class SemanticCollectionsTests
 {
     [Fact]
+    public void PayoutModelsDecodeCanonicalTypedFields()
+    {
+        var payout = JsonSerializer.Deserialize<Payout>(
+            """
+            {
+              "id":"po_123",
+              "destination_id":"fa_ghs",
+              "execute_after":"2026-09-14T09:00:00Z",
+              "initiated_at":"2026-09-14T08:55:00Z",
+              "max_amount":{"currency":"ghs","value":12500},
+              "status":"invalid",
+              "balance_transactions":["bt_123"],
+              "custom_data":{"batch":"weekly"},
+              "error":{"cause":"provider unavailable","message":"Payout failed","occurred_at":"2026-09-14T09:05:00Z","type":"network_error"},
+              "failed_at":"2026-09-14T09:05:00Z"
+            }
+            """);
+
+        Assert.Equal(PayoutStatus.Invalid, payout!.Status);
+        Assert.Equal("bt_123", Assert.Single(payout.BalanceTransactions!));
+        Assert.Equal("weekly", payout.CustomData!["batch"]);
+        Assert.Equal("network_error", payout.Error!.Type);
+        Assert.Equal(DateTimeOffset.Parse("2026-09-14T09:05:00Z"), payout.FailedAt);
+
+        var settings = JsonSerializer.Deserialize<PayoutSettingsLookup>(
+            """
+            {"destinations":{"ghs":"fa_ghs"},"schedule":{"aging_spec":{"abide":"strict","label":"Seven days","t_plus":"168h"},"description":"Weekly payouts","interval":"weekly","name":"Weekly","schedule_on":"monday","type":"automatic"}}
+            """);
+        Assert.Equal("fa_ghs", settings!.Destinations!.Ghs);
+        Assert.Equal("168h", settings.Schedule!.AgingSpec!.TPlus);
+    }
+
+    [Fact]
     public void CustomDataControlsMutationAndRollsBackInvalidChanges()
     {
         var data = new CustomData().Set("order", "first");
@@ -32,13 +65,13 @@ public sealed class SemanticCollectionsTests
     public void SemanticCollectionsRoundTripWithoutExposingMutableDictionaries()
     {
         var metadata = new FileMetadata().Set("source", "invoice");
-        var destinations = new PayoutDestinations().Set("GHS", "fa_example");
+        var destinations = new PayoutDestinations { Ghs = "fa_example" };
 
         var decodedMetadata = JsonSerializer.Deserialize<FileMetadata>(JsonSerializer.Serialize(metadata));
         var decodedDestinations = JsonSerializer.Deserialize<PayoutDestinations>(JsonSerializer.Serialize(destinations));
 
         Assert.Equal("invoice", decodedMetadata!["source"]);
-        Assert.Equal("fa_example", decodedDestinations!["GHS"]);
+        Assert.Equal("fa_example", decodedDestinations!.Ghs);
         Assert.IsAssignableFrom<IReadOnlyDictionary<string, string>>(decodedMetadata);
     }
 
