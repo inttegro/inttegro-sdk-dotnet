@@ -72,6 +72,9 @@ public sealed class CancelRefundRequest
     [JsonPropertyName("refund_id")]
     public string? RefundId { get; set; }
 
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+
     [JsonPropertyName("request_meta")]
     public RequestMeta? RequestMeta { get; set; }
 }
@@ -120,6 +123,9 @@ public sealed class Refund
     [JsonPropertyName("order_id")]
     public string? OrderId { get; set; }
 
+    [JsonPropertyName("order_amount")]
+    public Amount? OrderAmount { get; set; }
+
     [JsonPropertyName("status")]
     public RefundStatus Status { get; set; }
 
@@ -155,6 +161,9 @@ public sealed class Refund
 
     [JsonPropertyName("canceled_at")]
     public DateTimeOffset? CanceledAt { get; set; }
+
+    [JsonPropertyName("cancel_reason")]
+    public string? CancelReason { get; set; }
 }
 
 public sealed class RefundPage
