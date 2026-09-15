@@ -259,6 +259,9 @@ public sealed class PaymentMethod
     [JsonPropertyName("customer_id")]
     public string CustomerId { get; set; } = string.Empty;
 
+    [JsonPropertyName("fingerprint")]
+    public string Fingerprint { get; set; } = string.Empty;
+
     [JsonPropertyName("type")]
     public PaymentMethodType Type { get; set; }
 
