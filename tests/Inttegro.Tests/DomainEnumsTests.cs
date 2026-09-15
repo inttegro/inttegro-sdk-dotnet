@@ -41,4 +41,21 @@ public sealed class DomainEnumsTests
         Assert.Equal("mtn", account.Wallet!.MobileMoney!.Network);
         Assert.Equal("0123456789", account.BankAccount!.GhanaBankAccount!.Number);
     }
+
+    [Fact]
+    public void RefundSettlementDiscriminatorsCanFollowOtherFields()
+    {
+        const string json = """
+            {"payment_method":{"id":"pm_123","mobile_money":{"network":"mtn","account_number":"****7831","last4":"7831"},"type":"mobile_money"},"type":"payment_method"}
+            """;
+        var settlement = JsonSerializer.Deserialize<RefundSettlement>(json);
+        var method = Assert.IsType<RefundSettlementMobileMoneyPaymentMethod>(
+            Assert.IsType<RefundPaymentMethodSettlement>(settlement).PaymentMethod);
+        Assert.Equal("pm_123", method.Id);
+        Assert.Equal("****7831", method.MobileMoney.AccountNumber);
+
+        using var serialized = JsonDocument.Parse(JsonSerializer.Serialize<RefundSettlement>(settlement!));
+        Assert.Equal("payment_method", serialized.RootElement.GetProperty("type").GetString());
+        Assert.Equal("mobile_money", serialized.RootElement.GetProperty("payment_method").GetProperty("type").GetString());
+    }
 }

@@ -54,9 +54,7 @@ public sealed class RefundFailure
     public bool Retryable { get; set; }
 }
 
-[JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
-[JsonDerivedType(typeof(RefundOfflineSettlement), "offline")]
-[JsonDerivedType(typeof(RefundPaymentMethodSettlement), "payment_method")]
+[JsonConverter(typeof(RefundSettlementJsonConverter))]
 public abstract class RefundSettlement { }
 
 public sealed class RefundOfflineSettlement : RefundSettlement { }
@@ -67,9 +65,7 @@ public sealed class RefundPaymentMethodSettlement : RefundSettlement
     public RefundSettlementPaymentMethod PaymentMethod { get; set; } = null!;
 }
 
-[JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
-[JsonDerivedType(typeof(RefundSettlementMobileMoneyPaymentMethod), "mobile_money")]
-[JsonDerivedType(typeof(RefundSettlementBankAccountPaymentMethod), "bank_account")]
+[JsonConverter(typeof(RefundSettlementPaymentMethodJsonConverter))]
 public abstract class RefundSettlementPaymentMethod
 {
     [JsonPropertyName("id")]
