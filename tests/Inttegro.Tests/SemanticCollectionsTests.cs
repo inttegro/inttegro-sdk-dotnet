@@ -34,7 +34,7 @@ public sealed class SemanticCollectionsTests
             """
             {"destinations":{"ghs":"fa_ghs"},"schedule":{"aging_spec":{"abide":"strict","label":"Seven days","t_plus":"168h"},"description":"Weekly payouts","interval":"weekly","name":"Weekly","schedule_on":"monday","type":"automatic"}}
             """);
-        Assert.Equal("fa_ghs", settings!.Destinations!.Ghs);
+        Assert.Equal("fa_ghs", settings!.Destinations!.GHS);
         Assert.Equal("168h", settings.Schedule!.AgingSpec!.TPlus);
     }
 
@@ -65,13 +65,14 @@ public sealed class SemanticCollectionsTests
     public void SemanticCollectionsRoundTripWithoutExposingMutableDictionaries()
     {
         var metadata = new FileMetadata().Set("source", "invoice");
-        var destinations = new PayoutDestinations { Ghs = "fa_example" };
+        var destinations = new PayoutDestinations { GHS = "fa_example" };
 
         var decodedMetadata = JsonSerializer.Deserialize<FileMetadata>(JsonSerializer.Serialize(metadata));
         var decodedDestinations = JsonSerializer.Deserialize<PayoutDestinations>(JsonSerializer.Serialize(destinations));
 
         Assert.Equal("invoice", decodedMetadata!["source"]);
-        Assert.Equal("fa_example", decodedDestinations!.Ghs);
+        Assert.Equal("{\"ghs\":\"fa_example\"}", JsonSerializer.Serialize(destinations));
+        Assert.Equal("fa_example", decodedDestinations!.GHS);
         Assert.IsAssignableFrom<IReadOnlyDictionary<string, string>>(decodedMetadata);
     }
 

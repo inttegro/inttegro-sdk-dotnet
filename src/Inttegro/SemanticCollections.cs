@@ -233,7 +233,7 @@ public sealed class PayoutDestinations
 {
     /// <summary>Financial account that receives Ghana cedi payouts.</summary>
     [JsonPropertyName("ghs")]
-    public string? Ghs { get; set; }
+    public string? GHS { get; set; }
 }
 
 [JsonConverter(typeof(FileMetadataJsonConverter))]
