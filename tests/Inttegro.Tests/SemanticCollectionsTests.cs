@@ -95,5 +95,17 @@ public sealed class SemanticCollectionsTests
 
         Assert.Equal("partner", input.Get<Dictionary<string, string>>("attribution")!["channel"]);
         Assert.Equal(2500, customer!.Balance!["ghs"].Available!.Value);
+
+        var request = new CreateCustomerRequest
+        {
+            Name = "Ada",
+            BillingAddress = new Address { Town = "Accra", Country = "gh" },
+            CustomData = input,
+            ShippingAddress = new Address { Town = "Kumasi", Country = "gh" },
+        };
+        var payload = JsonSerializer.Serialize(request);
+        Assert.Contains("\"billing_address\":{", payload);
+        Assert.Contains("\"custom_data\":{", payload);
+        Assert.Contains("\"shipping_address\":{", payload);
     }
 }
