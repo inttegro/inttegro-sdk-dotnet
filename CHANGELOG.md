@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [9.0.0] - 2026-09-16
+
+- Breaking: customer create requests now expose native `Address` properties
+  for billing and shipping addresses instead of untyped JSON objects.
+- Standardized customer custom data on the validated `CustomDataInput` value
+  while retaining open-ended JSON serialization.
+
 ## [8.0.0] - 2026-09-14
 
 - Breaking: replaced payout dictionaries and anonymous payloads with named

@@ -5,6 +5,9 @@ namespace Inttegro;
 
 public sealed class CreateCustomerRequest
 {
+    [JsonPropertyName("billing_address")]
+    public Address? BillingAddress { get; set; }
+
     [JsonPropertyName("request_meta")]
     public RequestMeta? RequestMeta { get; set; }
 
@@ -28,6 +31,9 @@ public sealed class CreateCustomerRequest
 
     [JsonPropertyName("custom_data")]
     public CustomDataInput? CustomData { get; set; }
+
+    [JsonPropertyName("shipping_address")]
+    public Address? ShippingAddress { get; set; }
 }
 
 public sealed class LookupCustomerRequest
