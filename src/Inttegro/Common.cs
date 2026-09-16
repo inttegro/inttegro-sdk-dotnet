@@ -184,6 +184,9 @@ public sealed class ProductDetailsParams
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    [JsonPropertyName("product_id")]
+    public string? ProductId { get; set; }
+
     [JsonPropertyName("type")]
     public ProductType Type { get; set; }
 
