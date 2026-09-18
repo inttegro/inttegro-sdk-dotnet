@@ -399,7 +399,7 @@ public class InttegroClientTests
         var handler = new RecordingHandler
         {
             ResponseBody = """
-                {"refund":{"id":"rf_1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcd","order_id":"or_0123456789abcdefghijklmnopqrstuvwxyzABCD","status":"pending","settlement":{"type":"payment_method","payment_method":{"id":"pm_123","type":"mobile_money","mobile_money":{"network":"mtn","account_number":"****7831","last4":"7831"}}},"total":{"currency":"ghs","value":2500},"line_items":[{"id":"rli_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN","order_line_item_id":"oli_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN","original_amount_paid":{"currency":"ghs","value":5000},"refund_amount":{"currency":"ghs","value":2500}}],"reason":"item_returned","created_at":"2026-09-02T10:00:00Z"}}
+                {"refund":{"id":"rf_1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcd","order_id":"or_0123456789abcdefghijklmnopqrstuvwxyzABCD","status":"pending","settlement":{"type":"payment_method","payment_method":{"id":"pm_123","type":"mobile_money","mobile_money":{"network":"mtn","account_number":"****7831","last4":"7831"}}},"total":{"currency":"ghs","value":2500},"line_items":[{"id":"rli_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN","order_line_item_id":"oli_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN","order_line_item":{"id":"oli_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN","type":"product","quantity":2,"product":{"id":"prod_123","name":"Premium subscription"}},"original_amount_paid":{"currency":"ghs","value":5000},"refund_amount":{"currency":"ghs","value":2500}}],"reason":"item_returned","created_at":"2026-09-02T10:00:00Z"}}
                 """
         };
         var httpClient = new HttpClient(handler) { BaseAddress = new Uri("https://api.inttegro.com") };
@@ -430,6 +430,9 @@ public class InttegroClientTests
         var settlement = Assert.IsType<RefundPaymentMethodSettlement>(canonical.Settlement);
         var method = Assert.IsType<RefundSettlementMobileMoneyPaymentMethod>(settlement.PaymentMethod);
         Assert.Equal("****7831", method.MobileMoney.AccountNumber);
+        var lineItem = Assert.IsType<RefundProductOrderLineItem>(Assert.Single(canonical.LineItems!).OrderLineItem);
+        Assert.Equal(2, lineItem.Quantity);
+        Assert.Equal("prod_123", lineItem.Product.Id);
         Assert.Equal(new[] { "/refunds/create" }, handler.Requests.Select(r => r.RequestUri!.AbsolutePath));
         using var request = JsonDocument.Parse(handler.Bodies[0]);
         Assert.Equal("oli_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN", request.RootElement.GetProperty("line_items")[0].GetProperty("order_line_item_id").GetString());

@@ -114,6 +114,52 @@ public sealed class RefundSettlementGhanaBankAccount
     public string Last4 { get; set; } = string.Empty;
 }
 
+[JsonConverter(typeof(RefundOrderLineItemJsonConverter))]
+public abstract class RefundOrderLineItem
+{
+    [JsonPropertyName("id")]
+    public string Id { get; set; } = string.Empty;
+}
+
+public sealed class RefundProductOrderLineItem : RefundOrderLineItem
+{
+    [JsonPropertyName("quantity")]
+    public int Quantity { get; set; }
+
+    [JsonPropertyName("product")]
+    public RefundOrderLineItemProduct Product { get; set; } = null!;
+}
+
+public sealed class RefundOrderLineItemProduct
+{
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = string.Empty;
+}
+
+public sealed class RefundFeeOrderLineItem : RefundOrderLineItem
+{
+    [JsonPropertyName("fee")]
+    public RefundOrderLineItemAdjustment Fee { get; set; } = null!;
+}
+
+public sealed class RefundShippingOrderLineItem : RefundOrderLineItem
+{
+    [JsonPropertyName("shipping")]
+    public RefundOrderLineItemAdjustment Shipping { get; set; } = null!;
+}
+
+public sealed class RefundOrderLineItemAdjustment
+{
+    [JsonPropertyName("label")]
+    public string? Label { get; set; }
+
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+}
+
 public sealed class CreateRefundLineItem
 {
     [JsonPropertyName("order_line_item_id")]
@@ -186,7 +232,11 @@ public sealed class RefundLineItem
     public string? Id { get; set; }
 
     [JsonPropertyName("order_line_item_id")]
+    [Obsolete("Use OrderLineItem.Id.")]
     public string? OrderLineItemId { get; set; }
+
+    [JsonPropertyName("order_line_item")]
+    public RefundOrderLineItem? OrderLineItem { get; set; }
 
     [JsonPropertyName("original_amount_paid")]
     public Amount? OriginalAmountPaid { get; set; }
