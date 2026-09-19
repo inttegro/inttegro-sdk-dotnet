@@ -114,6 +114,9 @@ public enum ChimeEmailSchemaKind { [EnumMember(Value = "gmail_view_action")] Gma
 [JsonConverter(typeof(WireEnumJsonConverter<OTPAlphabetType>))]
 public enum OTPAlphabetType { [EnumMember(Value = "numeric")] Numeric, [EnumMember(Value = "alpha")] Alpha, [EnumMember(Value = "alphanumeric")] Alphanumeric }
 
+[JsonConverter(typeof(WireEnumJsonConverter<OTPPurpose>))]
+public enum OTPPurpose { [EnumMember(Value = "account_creation")] AccountCreation, [EnumMember(Value = "account_recovery")] AccountRecovery, [EnumMember(Value = "email_verification")] EmailVerification, [EnumMember(Value = "financial_account_verification")] FinancialAccountVerification, [EnumMember(Value = "password_reset")] PasswordReset, [EnumMember(Value = "payment_confirmation")] PaymentConfirmation, [EnumMember(Value = "payment_method_verification")] PaymentMethodVerification, [EnumMember(Value = "payout_confirmation")] PayoutConfirmation, [EnumMember(Value = "phone_verification")] PhoneVerification, [EnumMember(Value = "sensitive_action")] SensitiveAction, [EnumMember(Value = "sign_in")] SignIn, [EnumMember(Value = "transaction_confirmation")] TransactionConfirmation, [EnumMember(Value = "unspecified")] Unspecified }
+
 [JsonConverter(typeof(WireEnumJsonConverter<OTPStatus>))]
 public enum OTPStatus { [EnumMember(Value = "canceled")] Canceled, [EnumMember(Value = "expired")] Expired, [EnumMember(Value = "pending")] Pending, [EnumMember(Value = "pending_delivery")] PendingDelivery, [EnumMember(Value = "pending_verification")] PendingVerification, [EnumMember(Value = "verified")] Verified }
 
