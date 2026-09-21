@@ -139,6 +139,7 @@ public class InttegroClientTests
             RequestMeta = new RequestMeta { IdempotencyKey = "refund_order_alias_001" }
         };
         await client.Orders.PageAsync(new { });
+        await client.Orders.SearchAsync(new ResourceSearchRequest { Text = "tea" });
 
         await client.Refunds.CreateAsync(refundRequest);
         await client.Refunds.CancelAsync(new CancelRefundRequest
@@ -184,6 +185,7 @@ public class InttegroClientTests
         await client.Payouts.LookupAsync("po_1");
         await client.Payouts.ScheduleAsync(new SchedulePayoutRequest { DestinationId = "fa_1", MaxAmount = 1000, Reference = "PAYOUT-1" });
         await client.Payouts.CancelAsync("po_1");
+        await client.Payouts.SearchAsync(new ResourceSearchRequest { Text = "tea" });
 
         await client.BalanceTransactions.LookupAsync("txn_1");
         await client.BalanceTransactions.PageAsync(new { });
@@ -208,10 +210,12 @@ public class InttegroClientTests
             AccountId = "fa_1",
             UnsetAsPayoutDestination = true
         });
+        await client.FinancialAccounts.SearchAsync(new ResourceSearchRequest { Text = "tea" });
 
         await client.Customers.CreateAsync(new { name = "Jane Doe" });
         await client.Customers.LookupAsync("cu_1");
         await client.Customers.PageAsync(new { page_number = 1 });
+        await client.Customers.SearchAsync(new ResourceSearchRequest { Text = "tea" });
 
         await client.Products.CreateAsync(new
         {
@@ -231,6 +235,7 @@ public class InttegroClientTests
         await client.Products.UnpublishAsync(new { product_id = "prod_1" });
         await client.Products.ArchiveAsync(new { product_id = "prod_1" });
         await client.Products.PageAsync(new { page_number = 1 });
+        await client.Products.SearchAsync(new ResourceSearchRequest { Text = "tea" });
 
         await client.Prices.CreateAsync(new { currency = "ghs", amount = 5000 });
         await client.Prices.LookupAsync("pr_1");
@@ -295,6 +300,7 @@ public class InttegroClientTests
             "/orders/complete",
             "/orders/cancel",
             "/orders/page",
+            "/orders/search",
             "/refunds/create",
             "/refunds/cancel",
             "/refunds/lookup",
@@ -321,6 +327,7 @@ public class InttegroClientTests
             "/payouts/lookup",
             "/payouts/schedule",
             "/payouts/cancel",
+            "/payouts/search",
             "/balance_transactions/lookup",
             "/balance_transactions/page",
             "/financial_accounts/create",
@@ -335,9 +342,11 @@ public class InttegroClientTests
             "/financial_accounts/enable_pull",
             "/financial_accounts/disable_pull",
             "/financial_accounts/disconnect",
+            "/financial_accounts/search",
             "/customers/create",
             "/customers/lookup",
             "/customers/page",
+            "/customers/search",
             "/products/create",
             "/products/add_price",
             "/products/set_default_unit_price",
@@ -347,6 +356,7 @@ public class InttegroClientTests
             "/products/unpublish",
             "/products/archive",
             "/products/page",
+            "/products/search",
             "/prices/create",
             "/prices/lookup",
             "/prices/update",
@@ -469,6 +479,28 @@ public class InttegroClientTests
         Assert.False(root.TryGetProperty("idempotency_key", out _));
         var key = root.GetProperty("request_meta").GetProperty("idempotency_key").GetString();
         Assert.Matches(UuidV7Regex, key!);
+    }
+
+    [Fact]
+    public async Task ResourceSearchDoesNotGenerateMutationMetadata()
+    {
+        var handler = new RecordingHandler();
+        var httpClient = new HttpClient(handler) { BaseAddress = new Uri("https://api.inttegro.com") };
+        var client = new InttegroClient("test", httpClient: httpClient);
+
+        var page = await client.Orders.SearchAsync(new ResourceSearchRequest
+        {
+            Text = "tea",
+            Sort = new ResourceSearchSort
+            {
+                Field = ResourceSearchSortField.Relevance,
+                Direction = ResourceSearchSortDirection.Descending
+            }
+        });
+
+        using var document = JsonDocument.Parse(handler.Bodies.Single());
+        Assert.False(document.RootElement.TryGetProperty("request_meta", out _));
+        Assert.Equal(ResourceSearchFreshnessState.Current, page.Freshness.State);
     }
 
     [Fact]
@@ -722,6 +754,9 @@ public class InttegroClientTests
 
         private static string DefaultResponseBody(string path) => path switch
         {
+            var value when value.EndsWith("/search", StringComparison.Ordinal) => """
+                {"search":{"resource_types":["order"],"sort":{"field":"relevance","direction":"desc"},"page_size":20,"result_count":0,"has_more":false,"total":{"value":0,"relation":"exact"},"resource_totals":[],"results":[],"facets":[],"freshness":{"state":"current"}}}
+                """,
             "/orders/page" => "{\"page\":{\"number\":0,\"size\":0,\"orders\":[]}}",
             "/orders/send_invoice" or "/orders/send_receipt" => "{}",
             var value when value.StartsWith("/orders/", StringComparison.Ordinal) => "{\"order\":{\"id\":\"or_123\"}}",

@@ -16,6 +16,7 @@ public sealed class DomainEnumsTests
         Assert.Equal("\"refund_declined\"", JsonSerializer.Serialize(RefundFailureReason.RefundDeclined));
         Assert.Equal(RefundFailureReason.Unknown, JsonSerializer.Deserialize<RefundFailureReason>("\"unknown\""));
         Assert.Equal("\"pending\"", JsonSerializer.Serialize(UploadRequestStatus.Pending));
+        Assert.Equal("\"sign_in\"", JsonSerializer.Serialize(OTPPurpose.SignIn));
         Assert.Equal("\"mobile_money\"", JsonSerializer.Serialize(WalletType.MobileMoney));
         Assert.Equal("\"ghana_bank_account\"", JsonSerializer.Serialize(BankAccountType.GhanaBankAccount));
     }

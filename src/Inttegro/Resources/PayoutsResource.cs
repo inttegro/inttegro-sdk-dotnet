@@ -37,6 +37,9 @@ public class PayoutsResource
     public Task<PayoutPage> PageAsync(PayoutPageRequest payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<PayoutPage>("/payouts/page", "page", payload, cancellationToken);
 
+    public Task<ResourceSearchPage> SearchAsync(ResourceSearchRequest payload, CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<ResourceSearchPage>("/payouts/search", "search", payload, cancellationToken);
+
     public Task<Payout> LookupAsync(string payoutId, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<Payout>("/payouts/lookup", "payout", new { payout_id = payoutId }, cancellationToken);
 

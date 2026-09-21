@@ -39,4 +39,7 @@ public class CustomersResource
 
     public Task<CustomersPage> PageAsync(PageCustomersRequest payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<CustomersPage>("/customers/page", "page", payload, cancellationToken);
+
+    public Task<ResourceSearchPage> SearchAsync(ResourceSearchRequest payload, CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<ResourceSearchPage>("/customers/search", "search", payload, cancellationToken);
 }

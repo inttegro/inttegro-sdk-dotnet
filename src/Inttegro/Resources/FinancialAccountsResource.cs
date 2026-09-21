@@ -73,6 +73,9 @@ public class FinancialAccountsResource
     public Task<FinancialAccountPage> PageAsync(FinancialAccountPageRequest payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<FinancialAccountPage>("/financial_accounts/page", "page", payload, cancellationToken);
 
+    public Task<ResourceSearchPage> SearchAsync(ResourceSearchRequest payload, CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<ResourceSearchPage>("/financial_accounts/search", "search", payload, cancellationToken);
+
     public Task<FinancialAccount> VerifyAsync(object payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<FinancialAccount>("/financial_accounts/verify", "account", payload, cancellationToken);
 

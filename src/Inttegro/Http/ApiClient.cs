@@ -289,7 +289,7 @@ internal class ApiClient : IDisposable
         }
 
         var action = path.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries).LastOrDefault();
-        return action is not null and not "lookup" and not "page" and not "settings" and not "countries" and not "contents" and not "balances" and not "render_preview";
+        return action is not null and not "lookup" and not "page" and not "search" and not "settings" and not "countries" and not "contents" and not "balances" and not "render_preview";
     }
 
     private static bool IsAbsoluteUrl(string pathOrUrl) =>

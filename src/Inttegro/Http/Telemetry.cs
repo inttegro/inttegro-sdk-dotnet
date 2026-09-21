@@ -20,7 +20,7 @@ internal sealed class Telemetry
         "destroy", "disable", "disable_fx", "disable_pull", "disable_push", "disactivate", "disconnect",
         "enable", "enable_fx", "enable_pull", "enable_push", "finalize", "generate", "initiate", "lookup",
         "new", "open", "page", "pay", "publish", "reconcile", "reconnect", "refund", "render_preview",
-        "request_confirmation", "review", "revoke", "schedule", "send", "send_invoice", "send_receipt",
+        "request_confirmation", "review", "revoke", "schedule", "search", "send", "send_invoice", "send_receipt",
         "set_default_unit_price", "set_destinations", "settings", "tokenize", "unarchive", "unpublish",
         "update", "upload", "usage", "verify"
     };
