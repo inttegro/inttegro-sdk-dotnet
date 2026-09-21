@@ -157,6 +157,9 @@ public class OrdersResource
     public Task<OrderPage> PageAsync(OrderPageRequest payload, CancellationToken cancellationToken = default) =>
         PostOrderPageAsync(payload, cancellationToken);
 
+    public Task<ResourceSearchPage> SearchAsync(ResourceSearchRequest payload, CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<ResourceSearchPage>("/orders/search", "search", payload, cancellationToken);
+
     private async Task<Order> PostOrderAsync(string path, object payload, CancellationToken cancellationToken)
     {
         return await _client.PostResourceAsync<Order>(path, "order", payload, cancellationToken);

@@ -90,4 +90,7 @@ public class ProductsResource
 
     public Task<ProductPage> PageAsync(PageProductsRequest payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<ProductPage>("/products/page", "page", payload, cancellationToken);
+
+    public Task<ResourceSearchPage> SearchAsync(ResourceSearchRequest payload, CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<ResourceSearchPage>("/products/search", "search", payload, cancellationToken);
 }
