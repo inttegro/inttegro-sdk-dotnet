@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ErrorReport | Inttegro .NET SDK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ErrorReport | Inttegro .NET SDK ">
+    
+    <meta name="description" content="A privacy-safe description of a failed Inttegro SDK operation.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Inttegro .NET SDK">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Inttegro.Diagnostics.ErrorReport">
+
+
+
+  <h1 id="Inttegro_Diagnostics_ErrorReport" data-uid="Inttegro.Diagnostics.ErrorReport" class="text-break">Class ErrorReport</h1>
+  <div class="markdown level0 summary"><p>A privacy-safe description of a failed Inttegro SDK operation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ErrorReport</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Inttegro.Diagnostics.ErrorReport.html">ErrorReport</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Inttegro.html">Inttegro</a>.<a class="xref" href="Inttegro.Diagnostics.html">Diagnostics</a></h6>
+  <h6><strong>Assembly</strong>: Inttegro.dll</h6>
+  <h5 id="Inttegro_Diagnostics_ErrorReport_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed record ErrorReport : IEquatable&lt;ErrorReport&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport__ctor_System_Int32_System_String_System_DateTimeOffset_System_String_System_String_System_String_Inttegro_Diagnostics_SdkReportContext_Inttegro_Diagnostics_HttpReportContext_Inttegro_Diagnostics_ApiErrorReportContext_Inttegro_Diagnostics_TraceReportContext_System_String_System_String_.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.%23ctor(System.Int32%2CSystem.String%2CSystem.DateTimeOffset%2CSystem.String%2CSystem.String%2CSystem.String%2CInttegro.Diagnostics.SdkReportContext%2CInttegro.Diagnostics.HttpReportContext%2CInttegro.Diagnostics.ApiErrorReportContext%2CInttegro.Diagnostics.TraceReportContext%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L37">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport__ctor_" data-uid="Inttegro.Diagnostics.ErrorReport.#ctor*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport__ctor_System_Int32_System_String_System_DateTimeOffset_System_String_System_String_System_String_Inttegro_Diagnostics_SdkReportContext_Inttegro_Diagnostics_HttpReportContext_Inttegro_Diagnostics_ApiErrorReportContext_Inttegro_Diagnostics_TraceReportContext_System_String_System_String_" data-uid="Inttegro.Diagnostics.ErrorReport.#ctor(System.Int32,System.String,System.DateTimeOffset,System.String,System.String,System.String,Inttegro.Diagnostics.SdkReportContext,Inttegro.Diagnostics.HttpReportContext,Inttegro.Diagnostics.ApiErrorReportContext,Inttegro.Diagnostics.TraceReportContext,System.String,System.String)">ErrorReport(int, string, DateTimeOffset, string, string, string, SdkReportContext, HttpReportContext, ApiErrorReportContext?, TraceReportContext?, string, string)</h4>
+  <div class="markdown level1 summary"><p>A privacy-safe description of a failed Inttegro SDK operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ErrorReport(int SchemaVersion, string EventId, DateTimeOffset OccurredAt, string Severity, string Category, string Operation, SdkReportContext Sdk, HttpReportContext Http, ApiErrorReportContext? ApiError, TraceReportContext? Trace, string ExceptionType, string Fingerprint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">SchemaVersion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">EventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">OccurredAt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Severity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Category</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Operation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.SdkReportContext.html">SdkReportContext</a></td>
+        <td><span class="parametername">Sdk</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.HttpReportContext.html">HttpReportContext</a></td>
+        <td><span class="parametername">Http</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.ApiErrorReportContext.html">ApiErrorReportContext</a></td>
+        <td><span class="parametername">ApiError</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.TraceReportContext.html">TraceReportContext</a></td>
+        <td><span class="parametername">Trace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">ExceptionType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Fingerprint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_ApiError.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.ApiError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L46">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_ApiError_" data-uid="Inttegro.Diagnostics.ErrorReport.ApiError*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_ApiError" data-uid="Inttegro.Diagnostics.ErrorReport.ApiError">ApiError</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;apiError&quot;)]
+public ApiErrorReportContext? ApiError { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.ApiErrorReportContext.html">ApiErrorReportContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Category.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Category%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L42">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Category_" data-uid="Inttegro.Diagnostics.ErrorReport.Category*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Category" data-uid="Inttegro.Diagnostics.ErrorReport.Category">Category</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;category&quot;)]
+public string Category { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_EventId.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.EventId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L39">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_EventId_" data-uid="Inttegro.Diagnostics.ErrorReport.EventId*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_EventId" data-uid="Inttegro.Diagnostics.ErrorReport.EventId">EventId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;eventId&quot;)]
+public string EventId { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_ExceptionType.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.ExceptionType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L48">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_ExceptionType_" data-uid="Inttegro.Diagnostics.ErrorReport.ExceptionType*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_ExceptionType" data-uid="Inttegro.Diagnostics.ErrorReport.ExceptionType">ExceptionType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;exceptionType&quot;)]
+public string ExceptionType { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Fingerprint.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Fingerprint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L49">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Fingerprint_" data-uid="Inttegro.Diagnostics.ErrorReport.Fingerprint*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Fingerprint" data-uid="Inttegro.Diagnostics.ErrorReport.Fingerprint">Fingerprint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;fingerprint&quot;)]
+public string Fingerprint { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Http.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Http%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L45">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Http_" data-uid="Inttegro.Diagnostics.ErrorReport.Http*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Http" data-uid="Inttegro.Diagnostics.ErrorReport.Http">Http</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;http&quot;)]
+public HttpReportContext Http { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.HttpReportContext.html">HttpReportContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_OccurredAt.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.OccurredAt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L40">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_OccurredAt_" data-uid="Inttegro.Diagnostics.ErrorReport.OccurredAt*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_OccurredAt" data-uid="Inttegro.Diagnostics.ErrorReport.OccurredAt">OccurredAt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;occurredAt&quot;)]
+public DateTimeOffset OccurredAt { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Operation.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Operation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L43">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Operation_" data-uid="Inttegro.Diagnostics.ErrorReport.Operation*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Operation" data-uid="Inttegro.Diagnostics.ErrorReport.Operation">Operation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;operation&quot;)]
+public string Operation { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_SchemaVersion.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.SchemaVersion%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L38">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_SchemaVersion_" data-uid="Inttegro.Diagnostics.ErrorReport.SchemaVersion*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_SchemaVersion" data-uid="Inttegro.Diagnostics.ErrorReport.SchemaVersion">SchemaVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;schemaVersion&quot;)]
+public int SchemaVersion { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Sdk.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Sdk%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L44">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Sdk_" data-uid="Inttegro.Diagnostics.ErrorReport.Sdk*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Sdk" data-uid="Inttegro.Diagnostics.ErrorReport.Sdk">Sdk</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;sdk&quot;)]
+public SdkReportContext Sdk { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.SdkReportContext.html">SdkReportContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Severity.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Severity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L41">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Severity_" data-uid="Inttegro.Diagnostics.ErrorReport.Severity*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Severity" data-uid="Inttegro.Diagnostics.ErrorReport.Severity">Severity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;severity&quot;)]
+public string Severity { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport_Trace.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport.Trace%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L47">View Source</a>
+  </span>
+  <a id="Inttegro_Diagnostics_ErrorReport_Trace_" data-uid="Inttegro.Diagnostics.ErrorReport.Trace*"></a>
+  <h4 id="Inttegro_Diagnostics_ErrorReport_Trace" data-uid="Inttegro.Diagnostics.ErrorReport.Trace">Trace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;trace&quot;)]
+public TraceReportContext? Trace { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Inttegro.Diagnostics.TraceReportContext.html">TraceReportContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/new/v9.1.0/apiSpec/new?filename=Inttegro_Diagnostics_ErrorReport.md&amp;value=---%0Auid%3A%20Inttegro.Diagnostics.ErrorReport%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/inttegro/inttegro-sdk-dotnet/blob/v9.1.0/src/Inttegro/Diagnostics/ErrorReporting.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

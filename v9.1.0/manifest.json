@@ -1,0 +1,5781 @@
+{
+  "source_base_path": "/home/runner/work/inttegro-sdk-dotnet/inttegro-sdk-dotnet/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AddProductPriceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AddProductPriceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AddProductPriceRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Address.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Address.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Address",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ApiError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ApiError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ApiError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.App.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.App",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AppCredentialOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AppCredentialOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AppCredentialOwner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AppManagementRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AppManagementRole.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AppManagementRole",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AppRelationship.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AppRelationship.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AppRelationship",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AppRelationshipKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AppRelationshipKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AppRelationshipKind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AppRelationshipPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AppRelationshipPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AppRelationshipPolicy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.AppRelationshipStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.AppRelationshipStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.AppRelationshipStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BalanceAmount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BalanceAmount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BalanceAmount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BalanceBreakdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BalanceBreakdown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BalanceBreakdown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BalanceSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BalanceSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BalanceSnapshot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BalanceTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BalanceTransaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BalanceTransaction",
+      "Summary": "<p sourcefile=\"api/Inttegro.BalanceTransaction.yml\" sourcestartlinenumber=\"1\">A merchant balance entry caused by a payment or refund. Type identifies the\nsemantic source, not accounting direction, and exactly one matching source ID\nis present.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BalanceTransactionPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BalanceTransactionPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BalanceTransactionPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BalanceTransactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BalanceTransactionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BalanceTransactionType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BankAccounts.BankAccountConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BankAccounts.BankAccountConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BankAccounts.BankAccountConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BankAccounts.BankAccountOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BankAccounts.BankAccountOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BankAccounts.BankAccountOwner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BankAccounts.BankAccountOwnerAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BankAccounts.BankAccountOwnerAddress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BankAccounts.BankAccountOwnerAddress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BankAccounts.BankAccountType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BankAccounts.BankAccountType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BankAccounts.BankAccountType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BankAccounts.GhanaBankAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BankAccounts.GhanaBankAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BankAccounts.GhanaBankAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BankAccounts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BankAccounts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BankAccounts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.BillingDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.BillingDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.BillingDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Broadcast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Broadcast",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CancelPayoutRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CancelPayoutRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CancelPayoutRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CancelRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CancelRefundRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CancelRefundRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CatalogPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CatalogPrice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CatalogPrice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CatalogPriceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CatalogPriceParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CatalogPriceParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CheckoutOrderStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CheckoutOrderStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CheckoutOrderStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CheckoutPaymentStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CheckoutPaymentStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CheckoutPaymentStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CheckoutSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CheckoutSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CheckoutSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Chime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Chime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Chime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeEmailMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeEmailMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeEmailMessage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeEmailSchemaKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeEmailSchemaKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeEmailSchemaKind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimePage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimePage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeRecipient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeRecipient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeRecipient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeRecipientEmail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeRecipientEmail.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeRecipientEmail",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeRecipientPhone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeRecipientPhone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeRecipientPhone",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeRecipientType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeRecipientType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeRecipientType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeTransmission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeTransmission.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeTransmission",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ChimeTransport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ChimeTransport.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ChimeTransport",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ContentSafetyStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ContentSafetyStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ContentSafetyStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CountryBank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CountryBank.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CountryBank",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CountryBankBranch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CountryBankBranch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CountryBankBranch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CountryBankDirectory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CountryBankDirectory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CountryBankDirectory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CountrySpecification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CountrySpecification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CountrySpecification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CountrySpecifications.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CountrySpecifications.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CountrySpecifications",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CreateCustomerRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CreateCustomerRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CreateCustomerRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CreateProductRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CreateProductRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CreateProductRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CreatePurchaseIntentParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CreatePurchaseIntentParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CreatePurchaseIntentParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CreateRefundLineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CreateRefundLineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CreateRefundLineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CreateRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CreateRefundRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CreateRefundRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomDataInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomDataInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomDataInput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomDataPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomDataPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomDataPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Customer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Customer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomerBalance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomerBalance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomerBalance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomerBalanceValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomerBalanceValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomerBalanceValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomerData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomerData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomerData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.CustomersPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.CustomersPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.CustomersPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.DeliveryChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.DeliveryChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.DeliveryChannel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.ApiErrorReportContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.ApiErrorReportContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.ApiErrorReportContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.ErrorReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.ErrorReport.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.ErrorReport",
+      "Summary": "<p sourcefile=\"api/Inttegro.Diagnostics.ErrorReport.yml\" sourcestartlinenumber=\"1\">A privacy-safe description of a failed Inttegro SDK operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.ErrorReporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.ErrorReporter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.ErrorReporter",
+      "Summary": "<p sourcefile=\"api/Inttegro.Diagnostics.ErrorReporter.yml\" sourcestartlinenumber=\"1\">Receives one report after a logical SDK operation finally fails.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.ErrorReportingPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.ErrorReportingPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.ErrorReportingPolicy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.HttpReportContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.HttpReportContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.HttpReportContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.SdkReportContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.SdkReportContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.SdkReportContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.TraceReportContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.TraceReportContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics.TraceReportContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Diagnostics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Diagnostics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Diagnostics",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.DiscountDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.DiscountDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.DiscountDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.DoshAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.DoshAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.DoshAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.InttegroApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.InttegroApiException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors.InttegroApiException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.InttegroAuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.InttegroAuthenticationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors.InttegroAuthenticationException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.InttegroException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.InttegroException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors.InttegroException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.InttegroNetworkException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.InttegroNetworkException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors.InttegroNetworkException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.InttegroRateLimitException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.InttegroRateLimitException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors.InttegroRateLimitException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.InttegroTimeoutException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.InttegroTimeoutException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors.InttegroTimeoutException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Errors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Errors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Errors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FeeDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FeeDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FeeDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FeeDetailsParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FeeDetailsParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FeeDetailsParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileDelivery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileDisposition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileDisposition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileDisposition",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileDownload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileDownload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileDownload",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileLink",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileLinkCreation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileLinkCreation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileLinkCreation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileLinkDeliveryMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileLinkDeliveryMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileLinkDeliveryMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileLinkKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileLinkKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileLinkKind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileLinkPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileLinkPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileLinkPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileLinkStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileLinkStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileLinkStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileMetadata",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileReferenceReconciliation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileReferenceReconciliation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileReferenceReconciliation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileScanStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileScanStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileScanStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileSourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileSourceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileSourceType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FileStorageEncoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FileStorageEncoding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FileStorageEncoding",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountArchiveRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountArchiveRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountArchiveRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountCreateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountCreateRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountCreateRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountLookupRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountLookupRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountLookupRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountMandate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountMandate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountMandate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountPageRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountPageRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountPageRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountToggleRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountToggleRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountToggleRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountUpdateRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountUpdateRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountVerification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountVerification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountVerification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountVerificationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountVerificationRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountVerificationRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.FinancialAccountVerifyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.FinancialAccountVerifyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.FinancialAccountVerifyRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.GeneratedSecretKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.GeneratedSecretKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.GeneratedSecretKey",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.InttegroClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.InttegroClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.InttegroClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.InttegroResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.InttegroResponse-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.InttegroResponse<T>",
+      "Summary": "<p sourcefile=\"api/Inttegro.InttegroResponse-1.yml\" sourcestartlinenumber=\"1\">Decoded SDK value plus response-only HTTP metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.InvoiceSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.InvoiceSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.InvoiceSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.InvoiceUrl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.InvoiceUrl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.InvoiceUrl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.JsonData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.JsonData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.JsonData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.JsonValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.JsonValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.JsonValue",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LineItemParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LineItemParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LineItemParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LineItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LineItemType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LineItemType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LookupCustomerRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LookupCustomerRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LookupCustomerRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LookupPriceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LookupPriceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LookupPriceRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LookupProductRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LookupProductRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LookupProductRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.LookupRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.LookupRefundRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.LookupRefundRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageHeaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageHeaders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageHeaders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageMailbox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageMailbox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageMailbox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateChannel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateEmailContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateEmailContent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateEmailContent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplatePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplatePage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplatePage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplatePreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplatePreview.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplatePreview",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateSafetyResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateSafetyResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateSafetyResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateScannedLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateScannedLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateScannedLink",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateSmsContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateSmsContent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateSmsContent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateVariable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateVariable",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateVariableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateVariableItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateVariableItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateVariableItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateVariableItemType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateVariableItemType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MessageTemplateVariableType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MessageTemplateVariableType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MessageTemplateVariableType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MobileMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MobileMoney.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MobileMoney",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.MobileMoneyNetwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.MobileMoneyNetwork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.MobileMoneyNetwork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Money.Amount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Money.Amount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Money.Amount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Money.AmountParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Money.AmountParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Money.AmountParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Money.Currency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Money.Currency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Money.Currency",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Money.CurrencyJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Money.CurrencyJsonConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Money.CurrencyJsonConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Money.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Money.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Money",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OTPAlphabetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OTPAlphabetType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OTPAlphabetType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OTPPurpose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OTPPurpose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OTPPurpose",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OTPStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OTPStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OTPStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OTPTransmissionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OTPTransmissionStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OTPTransmissionStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OTPVerificationVerdict.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OTPVerificationVerdict.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OTPVerificationVerdict",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Order.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Order.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Order",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderAddress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderAddress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderCancelRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderCancelRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderCancelRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderCompleteRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderCompleteRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderCompleteRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderConfirmPaymentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderConfirmPaymentRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderConfirmPaymentRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderCreateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderCreateRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderCreateRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderCreatedFrom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderCreatedFrom.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderCreatedFrom",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderCreatedFromResourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderCreatedFromResourceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderCreatedFromResourceType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderCustomer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderCustomer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderCustomer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderDocumentDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderDocumentDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderDocumentDelivery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderDocumentDeliveryAttempt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderDocumentDeliveryAttempt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderDocumentDeliveryAttempt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderDocumentDeliveryFailure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderDocumentDeliveryFailure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderDocumentDeliveryFailure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderDocumentDeliveryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderDocumentDeliveryResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderDocumentDeliveryResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderDocumentKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderDocumentKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderDocumentKind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderFinalizeRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderFinalizeRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderFinalizeRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderInvoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderInvoice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderInvoice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderInvoiceFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderInvoiceFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderInvoiceFormat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderLineItemGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderLineItemGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderLineItemGroup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderLookupRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderLookupRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderLookupRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderPageRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderPageRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderPageRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderPayRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderPayRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderPayRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderPayoutDestination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderPayoutDestination.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderPayoutDestination",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderPayoutFinancialAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderPayoutFinancialAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderPayoutFinancialAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderPayoutSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderPayoutSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderPayoutSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderRequestConfirmationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderRequestConfirmationRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderRequestConfirmationRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderSendInvoiceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderSendInvoiceParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderSendInvoiceParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderSendReceiptParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderSendReceiptParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderSendReceiptParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OrderUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OrderUpdateRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OrderUpdateRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OtpTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OtpTransaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OtpTransaction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OtpVerification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OtpVerification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OtpVerification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OtpVerificationAttempt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OtpVerificationAttempt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OtpVerificationAttempt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.OtpVerificationAttemptResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.OtpVerificationAttemptResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.OtpVerificationAttemptResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PageCustomersRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PageCustomersRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PageCustomersRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PageProductsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PageProductsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PageProductsRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PageRefundsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PageRefundsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PageRefundsRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Payment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Payment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Payment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentAddress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentAddress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentAttempt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentAttempt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentAttempt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentAttemptError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentAttemptError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentAttemptError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentAttemptStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentAttemptStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentAttemptStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentAuthorizeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentAuthorizeAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentAuthorizeAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentBillingDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentBillingDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentBillingDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentConfirmAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentConfirmAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentConfirmAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentConfirmationAttempt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentConfirmationAttempt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentConfirmationAttempt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentConfirmationChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentConfirmationChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentConfirmationChannel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentConfirmationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentConfirmationRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentConfirmationRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentCustomer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentCustomer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentCustomer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethod",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodActionRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodActionRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodActionRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodBankAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodBankAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodBankAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodBankAccountGhana.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodBankAccountGhana.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodBankAccountGhana",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodCard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodConfirmVerificationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodConfirmVerificationRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodConfirmVerificationRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodDeleteRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodDeleteRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodDeleteRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodDeletion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodDeletion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodDeletion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodLookupRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodLookupRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodLookupRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodMobileMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodMobileMoney.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodMobileMoney",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodOwner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodOwnerAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodOwnerAddress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodOwnerAddress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodOwnerAddressResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodOwnerAddressResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodOwnerAddressResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodOwnerInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodOwnerInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodOwnerInput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodPageRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodPageRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodPageRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSnapshot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSnapshotBankAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSnapshotBankAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSnapshotBankAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSnapshotCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSnapshotCard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSnapshotCard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSnapshotGhanaBankAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSnapshotGhanaBankAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSnapshotGhanaBankAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSnapshotMobileMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSnapshotMobileMoney.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSnapshotMobileMoney",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSnapshotOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSnapshotOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSnapshotOwner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodSupplied.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodSupplied.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodSupplied",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodTokenizeRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodTokenizeRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodTokenizeRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodTypeSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodTypeSetting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodTypeSetting",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodUpdateRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodUpdateRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodVerification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodVerification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodVerification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodVerificationDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodVerificationDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodVerificationDelivery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodVerificationSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodVerificationSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodVerificationSession",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentMethodVerifyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentMethodVerifyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentMethodVerifyRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentNextAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentNextAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentNextAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentNextActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentNextActionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentNextActionType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentRedirectAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentRedirectAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentRedirectAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentRedirectVisit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentRedirectVisit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentRedirectVisit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentRequestConfirmationAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentRequestConfirmationAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentRequestConfirmationAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentResultStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentResultStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentResultStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PaymentStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PaymentStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PaymentStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Payout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Payout.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Payout",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutConfigurationDestination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutConfigurationDestination.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutConfigurationDestination",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutDestinations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutDestinations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutDestinations",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutDestinations.yml\" sourcestartlinenumber=\"1\">Supported currency-to-financial-account payout assignments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutPageRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutPageRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutPageRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSetDestinationsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSetDestinationsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSetDestinationsRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSettingsLookup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSettingsLookup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSettingsLookup",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutSettingsLookup.yml\" sourcestartlinenumber=\"1\">Complete payout settings returned by the settings endpoint.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSettingsLookupSchedule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSettingsLookupSchedule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSettingsLookupSchedule",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutSettingsLookupSchedule.yml\" sourcestartlinenumber=\"1\">Active payout schedule returned by the settings endpoint.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSettingsLookupScheduleAgingSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSettingsLookupScheduleAgingSpec.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSettingsLookupScheduleAgingSpec",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutSettingsLookupScheduleAgingSpec.yml\" sourcestartlinenumber=\"1\">Rules that determine when balance transactions become eligible for payout.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSettingsMutation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSettingsMutation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSettingsMutation",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutSettingsMutation.yml\" sourcestartlinenumber=\"1\">Payout settings fields returned after a settings mutation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSettingsMutationSchedule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSettingsMutationSchedule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSettingsMutationSchedule",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutSettingsMutationSchedule.yml\" sourcestartlinenumber=\"1\">Updated payout schedule returned after a settings mutation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutSettingsMutationScheduleSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutSettingsMutationScheduleSpec.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutSettingsMutationScheduleSpec",
+      "Summary": "<p sourcefile=\"api/Inttegro.PayoutSettingsMutationScheduleSpec.yml\" sourcestartlinenumber=\"1\">Aging rule returned after a payout settings mutation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PayoutStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PayoutStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PayoutStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Price.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Price.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Price",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PricePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PricePage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PricePage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PricePageRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PricePageRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PricePageRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PriceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PriceParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PriceParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Product.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Product.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Product",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductActionRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductActionRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductActionRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductCustomDimensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductCustomDimensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductCustomDimensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDefaultUnitPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDefaultUnitPrice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDefaultUnitPrice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDelivery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDetailsParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDetailsParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDetailsParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDigitalDimensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDigitalDimensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDigitalDimensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDimensionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDimensionDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDimensionDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDimensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDimensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDimensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductDownload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductDownload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductDownload",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductMedia.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductMedia.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductMedia",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductPhysicalDimensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductPhysicalDimensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductPhysicalDimensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductPriceSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductPriceSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductPriceSummary",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductRender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductRender.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductRender",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductShipment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductShipment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductShipment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductShipmentInputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductShipmentInputType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductShipmentInputType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductShipmentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductShipmentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductShipmentType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductStream",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ProductType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ProductType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ProductType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PullPushConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PullPushConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PullPushConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentMerchant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentMerchant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentMerchant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentOriginalPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentOriginalPrice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentOriginalPrice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentOriginalPriceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentOriginalPriceParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentOriginalPriceParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentPrice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentPrice",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentPriceSelectorParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentPriceSelectorParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentPriceSelectorParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentProduct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentProduct.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentProduct",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentProductSelectorParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentProductSelectorParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentProductSelectorParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentQuantity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentQuantity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentQuantity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentUsage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentUsage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentUsage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentUsageOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentUsageOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentUsageOrder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentVariant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentVariant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentVariant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentVariantAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentVariantAxis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentVariantAxis",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.PurchaseIntentVariantSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.PurchaseIntentVariantSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.PurchaseIntentVariantSet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Refund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Refund.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Refund",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundFailure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundFailure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundFailure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundFailureReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundFailureReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundFailureReason",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundFailureReasonJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundFailureReasonJsonConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundFailureReasonJsonConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundFeeOrderLineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundFeeOrderLineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundFeeOrderLineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundLineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundLineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundLineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundOfflineSettlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundOfflineSettlement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundOfflineSettlement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundOrderLineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundOrderLineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundOrderLineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundOrderLineItemAdjustment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundOrderLineItemAdjustment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundOrderLineItemAdjustment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundOrderLineItemProduct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundOrderLineItemProduct.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundOrderLineItemProduct",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundPaymentMethodSettlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundPaymentMethodSettlement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundPaymentMethodSettlement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundProductOrderLineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundProductOrderLineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundProductOrderLineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundReason",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundReasonJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundReasonJsonConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundReasonJsonConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlementBankAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlementBankAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlementBankAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlementBankAccountPaymentMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlementBankAccountPaymentMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlementBankAccountPaymentMethod",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlementGhanaBankAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlementGhanaBankAccount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlementGhanaBankAccount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlementMobileMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlementMobileMoney.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlementMobileMoney",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlementMobileMoneyPaymentMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlementMobileMoneyPaymentMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlementMobileMoneyPaymentMethod",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundSettlementPaymentMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundSettlementPaymentMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundSettlementPaymentMethod",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundShippingOrderLineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundShippingOrderLineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundShippingOrderLineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RefundStatusJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RefundStatusJsonConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RefundStatusJsonConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RenderedEmailMessageTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RenderedEmailMessageTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RenderedEmailMessageTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RenderedMessageTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RenderedMessageTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RenderedMessageTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RenderedSmsMessageTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RenderedSmsMessageTemplate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RenderedSmsMessageTemplate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.RequestMeta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.RequestMeta.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.RequestMeta",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchFacet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchFacet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchFacet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchFacetBucket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchFacetBucket.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchFacetBucket",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchFacetResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchFacetResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchFacetResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchFilter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchFreshness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchFreshness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchFreshness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchFreshnessState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchFreshnessState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchFreshnessState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchOperator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchOperator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchResourceFreshness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchResourceFreshness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchResourceFreshness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchResourceReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchResourceReference.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchResourceReference",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchResourceTotal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchResourceTotal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchResourceTotal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchResourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchResourceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchResourceType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchSort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchSort.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchSort",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchSortDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchSortDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchSortDirection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchSortField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchSortField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchSortField",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchTotal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchTotal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchTotal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSearchTotalRelation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSearchTotalRelation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSearchTotalRelation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ResourceSemantics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ResourceSemantics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ResourceSemantics",
+      "Summary": "<p sourcefile=\"api/Inttegro.ResourceSemantics.yml\" sourcestartlinenumber=\"1\">Deterministic questions about Inttegro resource responses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.AppsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.AppsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.AppsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.BalanceTransactionsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.BalanceTransactionsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.BalanceTransactionsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.BalancesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.BalancesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.BalancesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.BroadcastsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.BroadcastsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.BroadcastsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.ChimesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.ChimesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.ChimesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.CustomersResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.CustomersResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.CustomersResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.FileLinksResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.FileLinksResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.FileLinksResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.FileReferencesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.FileReferencesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.FileReferencesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.FilesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.FilesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.FilesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.FinancialAccountsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.FinancialAccountsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.FinancialAccountsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.KeysResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.KeysResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.KeysResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.MessageTemplatesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.MessageTemplatesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.MessageTemplatesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.OrdersResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.OrdersResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.OrdersResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.OtpResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.OtpResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.OtpResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.PaymentMethodsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.PaymentMethodsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.PaymentMethodsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.PayoutsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.PayoutsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.PayoutsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.PricesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.PricesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.PricesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.ProductsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.ProductsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.ProductsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.PurchaseIntentsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.PurchaseIntentsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.PurchaseIntentsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.RefundsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.RefundsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.RefundsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.SchedulesResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.SchedulesResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.SchedulesResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.SpecResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.SpecResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.SpecResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.UploadRequestsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.UploadRequestsResource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources.UploadRequestsResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Resources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Resources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ReviewUploadRequestAttemptByIdRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ReviewUploadRequestAttemptByIdRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ReviewUploadRequestAttemptByIdRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ReviewUploadRequestAttemptByOrdinalRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ReviewUploadRequestAttemptByOrdinalRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ReviewUploadRequestAttemptByOrdinalRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SchedulePayoutRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SchedulePayoutRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SchedulePayoutRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ScheduledChime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ScheduledChime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ScheduledChime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKey",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyAuthResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyAuthResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyAuthResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyTokenType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyTokenType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyTokenType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyUsage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyUsage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyUsage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyUsagePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyUsagePage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyUsagePage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SecretKeyUsageRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SecretKeyUsageRow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SecretKeyUsageRow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.SetDefaultUnitPriceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.SetDefaultUnitPriceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.SetDefaultUnitPriceRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Shipping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Shipping.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Shipping",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ShippingDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ShippingDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ShippingDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.ShippingDetailsParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.ShippingDetailsParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.ShippingDetailsParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.StoredFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.StoredFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.StoredFile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.StoredFilePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.StoredFilePage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.StoredFilePage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UpdateCustomerRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UpdateCustomerRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UpdateCustomerRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UpdatePriceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UpdatePriceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UpdatePriceRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UpdateProductRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UpdateProductRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UpdateProductRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadFulfillment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadFulfillment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadFulfillment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequestAttempts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequestAttempts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequestAttempts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequestConstraints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequestConstraints.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequestConstraints",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequestDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequestDisplay.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequestDisplay",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequestPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequestPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequestPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequestReviewReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequestReviewReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequestReviewReason",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadRequestStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadRequestStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadRequestStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadReviewDecision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadReviewDecision.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadReviewDecision",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.UploadReviewType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.UploadReviewType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.UploadReviewType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Validation.RequestValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Validation.RequestValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Validation.RequestValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Validation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Validation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Wallets.WalletConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Wallets.WalletConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Wallets.WalletConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Wallets.WalletMobileMoney.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Wallets.WalletMobileMoney.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Wallets.WalletMobileMoney",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Wallets.WalletType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Wallets.WalletType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Wallets.WalletType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.Wallets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.Wallets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro.Wallets",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Inttegro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Inttegro.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Inttegro",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
