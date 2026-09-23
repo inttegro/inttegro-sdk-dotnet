@@ -163,7 +163,7 @@ public sealed class Payout
     public Amount? Amount { get; set; }
 
     [JsonPropertyName("balance_transactions")]
-    public List<string>? BalanceTransactions { get; set; }
+    public List<PayoutBalanceTransaction>? BalanceTransactions { get; set; }
 
     [JsonPropertyName("canceled_at")]
     public DateTimeOffset? CanceledAt { get; set; }
@@ -224,6 +224,19 @@ public sealed class Payout
 
     [JsonPropertyName("succeeded_at")]
     public DateTimeOffset? SucceededAt { get; set; }
+}
+
+/// <summary>A sparse view of one balance transaction's contribution to a payout.</summary>
+public sealed class PayoutBalanceTransaction
+{
+    [JsonPropertyName("allocated_amount")]
+    public Amount? AllocatedAmount { get; set; }
+
+    [JsonPropertyName("amount")]
+    public Amount? Amount { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
 }
 
 public sealed class PayoutError

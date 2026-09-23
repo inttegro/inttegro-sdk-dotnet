@@ -17,7 +17,7 @@ public sealed class SemanticCollectionsTests
               "initiated_at":"2026-09-14T08:55:00Z",
               "max_amount":{"currency":"ghs","value":12500},
               "status":"invalid",
-              "balance_transactions":["bt_123"],
+              "balance_transactions":[{"id":"bt_123","amount":{"currency":"ghs","value":20000},"allocated_amount":{"currency":"ghs","value":12500}}],
               "custom_data":{"batch":"weekly"},
               "error":{"cause":"provider unavailable","message":"Payout failed","occurred_at":"2026-09-14T09:05:00Z","type":"network_error"},
               "failed_at":"2026-09-14T09:05:00Z"
@@ -25,7 +25,10 @@ public sealed class SemanticCollectionsTests
             """);
 
         Assert.Equal(PayoutStatus.Invalid, payout!.Status);
-        Assert.Equal("bt_123", Assert.Single(payout.BalanceTransactions!));
+        var contribution = Assert.Single(payout.BalanceTransactions!);
+        Assert.Equal("bt_123", contribution.Id);
+        Assert.Equal(20000, contribution.Amount!.Value);
+        Assert.Equal(12500, contribution.AllocatedAmount!.Value);
         Assert.Equal("weekly", payout.CustomData!["batch"]);
         Assert.Equal("network_error", payout.Error!.Type);
         Assert.Equal(DateTimeOffset.Parse("2026-09-14T09:05:00Z"), payout.FailedAt);
