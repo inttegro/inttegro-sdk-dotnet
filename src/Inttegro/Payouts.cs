@@ -165,6 +165,9 @@ public sealed class Payout
     [JsonPropertyName("balance_transactions")]
     public List<PayoutBalanceTransaction>? BalanceTransactions { get; set; }
 
+    [JsonPropertyName("balance_transaction_id")]
+    public string? BalanceTransactionId { get; set; }
+
     [JsonPropertyName("canceled_at")]
     public DateTimeOffset? CanceledAt { get; set; }
 
