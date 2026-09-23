@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+## [10.0.0] - 2026-09-23
+
+- Breaking: replaced payout `BalanceTransactions` ID strings with typed
+  contribution objects containing the source transaction's original amount and
+  the exact amount allocated to the payout.
+- Added complete payment balance-transaction allocation history together with
+  available, pending, and spent amount partitions.
+
 ## [9.1.0] - 2026-09-21
 
 - Added typed search across customers, financial accounts, orders, payouts, and
