@@ -784,7 +784,8 @@ public class InttegroClientTests
             "/financial_accounts/page" => "{\"page\":{}}",
             var value when value.StartsWith("/financial_accounts/", StringComparison.Ordinal) => "{\"account\":{}}",
             "/customers/page" => "{\"page\":{}}",
-            var value when value.StartsWith("/customers/", StringComparison.Ordinal) => "{\"customer\":{}}",
+            var value when value.StartsWith("/customers/", StringComparison.Ordinal) =>
+                "{\"customer\":{\"fingerprint\":\"cfp_v1_app_buyer\"}}",
 
             "/products/add_price" => "{\"price\":{}}",
             "/products/page" => "{\"page\":{}}",

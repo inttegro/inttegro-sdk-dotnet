@@ -89,6 +89,7 @@ public sealed class SemanticCollectionsTests
             """
             {
               "id":"cu_example",
+              "fingerprint":"cfp_v1_app_buyer",
               "name":"Ada",
               "created_at":"2026-01-01T00:00:00Z",
               "guest":false,
