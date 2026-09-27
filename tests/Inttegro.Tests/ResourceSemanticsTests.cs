@@ -1,9 +1,18 @@
 using Xunit;
+using System.Text.Json;
 
 namespace Inttegro.Tests;
 
 public sealed class ResourceSemanticsTests
 {
+    [Fact]
+    public void CustomerFingerprintIsRequiredAndRoundTrips()
+    {
+        var customer = JsonSerializer.Deserialize<Customer>("{\"id\":\"cu_1\",\"fingerprint\":\"cfp_v1_app_buyer\"}");
+        Assert.Equal("cfp_v1_app_buyer", customer!.Fingerprint);
+        Assert.Contains("\"fingerprint\":\"cfp_v1_app_buyer\"", JsonSerializer.Serialize(customer));
+    }
+
     [Fact]
     public void PaymentAndOrderAnswerLifecycleQuestions()
     {

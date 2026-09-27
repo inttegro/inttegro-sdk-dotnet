@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [10.1.0] - 2026-09-27
+
+- Added the required application-scoped customer fingerprint to typed customer
+  responses for possible duplicate-record detection.
+
 ## [10.0.0] - 2026-09-23
 
 - Breaking: replaced payout `BalanceTransactions` ID strings with typed

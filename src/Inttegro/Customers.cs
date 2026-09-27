@@ -95,6 +95,9 @@ public sealed class Customer
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    [JsonPropertyName("fingerprint")]
+    public required string Fingerprint { get; set; }
+
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
