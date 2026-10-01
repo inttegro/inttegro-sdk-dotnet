@@ -188,7 +188,7 @@ public sealed class ProductDetailsParams
     public string? ProductId { get; set; }
 
     [JsonPropertyName("type")]
-    public ProductType Type { get; set; }
+    public ProductType? Type { get; set; }
 
     [JsonPropertyName("name")]
     public string? Name { get; set; }
@@ -205,6 +205,9 @@ public sealed class ProductDetailsParams
     [JsonPropertyName("price_id")]
     public string? PriceId { get; set; }
 
+    [JsonPropertyName("customer_selected_price")]
+    public CustomerSelectedPriceInput? CustomerSelectedPrice { get; set; }
+
     [JsonPropertyName("reference")]
     public string? Reference { get; set; }
 
@@ -213,6 +216,15 @@ public sealed class ProductDetailsParams
 
     [JsonPropertyName("custom_data")]
     public CustomDataInput? CustomData { get; set; }
+}
+
+public sealed class CustomerSelectedPriceInput
+{
+    [JsonPropertyName("price_id")]
+    public string? PriceId { get; set; }
+
+    [JsonPropertyName("selected_amount")]
+    public AmountParams? SelectedAmount { get; set; }
 }
 
 public sealed class ProductDetails
