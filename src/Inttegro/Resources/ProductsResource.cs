@@ -26,7 +26,12 @@ public class ProductsResource
     public Task<ProductDefaultUnitPrice> AddPriceAsync(AddProductPriceRequest payload, CancellationToken cancellationToken = default)
     {
         RequestValidator.Require(payload.ProductId, "product_id");
-        RequestValidator.Require(payload.Amount, "amount");
+        RequestValidator.ValidatePriceDefinition(
+            payload.Type,
+            payload.FixedAmount,
+            payload.CustomerSelectedAmount,
+            payload.ProductId
+        );
         return _client.PostResourceAsync<ProductDefaultUnitPrice>("/products/add_price", "price", payload, cancellationToken);
     }
 

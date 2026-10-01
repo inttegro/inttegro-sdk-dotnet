@@ -26,7 +26,8 @@ public class InttegroClientTests
         var priceJson = JsonSerializer.Serialize(new PriceParams { Currency = Currency.GHS, Value = 3005 });
         var catalogPriceJson = JsonSerializer.Serialize(new CatalogPriceParams
         {
-            Amount = new AmountParams { Currency = Currency.GHS, Value = 3005 },
+            Type = PriceType.FixedAmount,
+            FixedAmount = new AmountParams { Currency = Currency.GHS, Value = 3005 },
             Label = "Retail"
         });
         var networkJson = JsonSerializer.Serialize(MobileMoneyNetwork.MTN);
@@ -35,15 +36,66 @@ public class InttegroClientTests
 
         Assert.Equal("{\"currency\":\"ghs\",\"value\":3005}", amountJson);
         Assert.Equal("{\"currency\":\"ghs\",\"value\":3005}", priceJson);
-        Assert.Equal("{\"product_id\":null,\"label\":\"Retail\",\"about\":null,\"amount\":{\"currency\":\"ghs\",\"value\":3005}}", catalogPriceJson);
+        Assert.Equal("{\"product_id\":null,\"label\":\"Retail\",\"about\":null,\"type\":\"fixed_amount\",\"fixed_amount\":{\"currency\":\"ghs\",\"value\":3005},\"customer_selected_amount\":null}", catalogPriceJson);
+        var productPrice = new AddProductPriceRequest
+        {
+            ProductId = "prod_123",
+            Type = PriceType.FixedAmount,
+            FixedAmount = new AmountParams { Currency = Currency.GHS, Value = 3005 }
+        };
+        Inttegro.Validation.RequestValidator.ValidatePriceDefinition(
+            productPrice.Type,
+            productPrice.FixedAmount,
+            productPrice.CustomerSelectedAmount,
+            productPrice.ProductId
+        );
+        Assert.DoesNotContain("\"amount\"", JsonSerializer.Serialize(productPrice));
         var catalogPrice = JsonSerializer.Deserialize<CatalogPrice>(
-            "{\"id\":\"pr_123\",\"active\":true,\"nominal\":{\"currency\":\"ghs\",\"value\":3005},\"product_id\":\"prod_123\",\"created_at\":\"2026-09-02T12:00:00Z\"}"
+            "{\"id\":\"pr_123\",\"active\":true,\"type\":\"fixed_amount\",\"nominal\":{\"currency\":\"ghs\",\"value\":3005},\"fixed_amount\":{\"currency\":\"ghs\",\"value\":3005},\"product_id\":\"prod_123\",\"created_at\":\"2026-09-02T12:00:00Z\"}"
         );
         Assert.Equal("prod_123", catalogPrice!.ProductId);
         Assert.Equal(DateTimeOffset.Parse("2026-09-02T12:00:00Z"), catalogPrice.CreatedAt);
         Assert.Equal("\"mtn\"", networkJson);
         Assert.Equal("\"mobile_money\"", paymentMethodJson);
         Assert.Equal("\"requires_confirmation\"", paymentResultJson);
+
+        var selectedParams = new CatalogPriceParams
+        {
+            ProductId = "prod_donation",
+            Type = PriceType.CustomerSelectedAmount,
+            CustomerSelectedAmount = new CustomerSelectedAmountParams
+            {
+                Currency = Currency.GHS,
+                Minimum = 500,
+                SuggestedAmounts =
+                [
+                    new SuggestedAmountParams { Id = "supporter", Value = 1000, Recommended = true }
+                ]
+            }
+        };
+        var selectedJson = JsonNode.Parse(JsonSerializer.Serialize(selectedParams))!;
+        Assert.Equal("customer_selected_amount", selectedJson["type"]!.GetValue<string>());
+        Assert.Equal(1000L, selectedJson["customer_selected_amount"]!["suggested_amounts"]![0]!["value"]!.GetValue<long>());
+
+        var selectedPrice = JsonSerializer.Deserialize<CatalogPrice>(
+            "{\"id\":\"pr_donation\",\"active\":true,\"type\":\"customer_selected_amount\",\"customer_selected_amount\":{\"currency\":\"ghs\",\"minimum\":500},\"product_id\":\"prod_donation\",\"created_at\":\"2026-10-01T12:00:00Z\"}"
+        )!;
+        Assert.Null(selectedPrice.Nominal);
+        Assert.Equal(500, selectedPrice.CustomerSelectedAmount!.Minimum);
+
+        var selectedProduct = new ProductDetailsParams
+        {
+            ProductId = "prod_donation",
+            Quantity = 1,
+            CustomerSelectedPrice = new CustomerSelectedPriceInput
+            {
+                PriceId = "pr_donation",
+                SelectedAmount = new AmountParams { Currency = Currency.GHS, Value = 750 }
+            }
+        };
+        Inttegro.Validation.RequestValidator.ValidateCustomerSelectedProduct(selectedProduct);
+        var selectedProductJson = JsonNode.Parse(JsonSerializer.Serialize(selectedProduct))!;
+        Assert.Equal("pr_donation", selectedProductJson["customer_selected_price"]!["price_id"]!.GetValue<string>());
     }
 
     [Fact]
@@ -230,7 +282,8 @@ public class InttegroClientTests
         await client.Products.AddPriceAsync(new
         {
             product_id = "prod_1",
-            amount = new { currency = "ghs", value = 5000 },
+            type = "fixed_amount",
+            fixed_amount = new { currency = "ghs", value = 5000 },
             set_as_default = true
         });
         await client.Products.SetDefaultUnitPriceAsync(new { product_id = "prod_1", price_id = "pr_1" });
@@ -242,7 +295,11 @@ public class InttegroClientTests
         await client.Products.PageAsync(new { page_number = 1 });
         await client.Products.SearchAsync(new ResourceSearchRequest { Text = "tea" });
 
-        await client.Prices.CreateAsync(new { currency = "ghs", amount = 5000 });
+        await client.Prices.CreateAsync(new
+        {
+            type = "fixed_amount",
+            fixed_amount = new { currency = "ghs", value = 5000 }
+        });
         await client.Prices.LookupAsync("pr_1");
         await client.Prices.UpdateAsync(new UpdatePriceRequest { PriceId = "pr_1", Label = "Retail" });
         await client.Prices.ActivateAsync("pr_1");

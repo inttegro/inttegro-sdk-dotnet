@@ -17,8 +17,17 @@ public sealed class ProductDefaultUnitPrice
     [JsonPropertyName("about")]
     public string? About { get; set; }
 
+    [JsonPropertyName("type")]
+    public PriceType Type { get; set; }
+
     [JsonPropertyName("nominal")]
     public Amount? Nominal { get; set; }
+
+    [JsonPropertyName("fixed_amount")]
+    public Amount? FixedAmount { get; set; }
+
+    [JsonPropertyName("customer_selected_amount")]
+    public CustomerSelectedAmount? CustomerSelectedAmount { get; set; }
 
     [JsonPropertyName("created_at")]
     public DateTimeOffset? CreatedAt { get; set; }
@@ -41,8 +50,17 @@ public sealed class ProductPriceSummary
     [JsonPropertyName("active")]
     public bool Active { get; set; }
 
+    [JsonPropertyName("type")]
+    public PriceType Type { get; set; }
+
     [JsonPropertyName("nominal")]
-    public Amount Nominal { get; set; } = null!;
+    public Amount? Nominal { get; set; }
+
+    [JsonPropertyName("fixed_amount")]
+    public Amount? FixedAmount { get; set; }
+
+    [JsonPropertyName("customer_selected_amount")]
+    public CustomerSelectedAmount? CustomerSelectedAmount { get; set; }
 }
 
 public sealed class ProductAttribute
@@ -226,8 +244,14 @@ public sealed class AddProductPriceRequest
     [JsonPropertyName("about")]
     public string? About { get; set; }
 
-    [JsonPropertyName("amount")]
-    public AmountParams? Amount { get; set; }
+    [JsonPropertyName("type")]
+    public PriceType? Type { get; set; }
+
+    [JsonPropertyName("fixed_amount")]
+    public AmountParams? FixedAmount { get; set; }
+
+    [JsonPropertyName("customer_selected_amount")]
+    public CustomerSelectedAmountParams? CustomerSelectedAmount { get; set; }
 
     [JsonPropertyName("set_as_default")]
     public bool? SetAsDefault { get; set; }
