@@ -1,7 +1,47 @@
+using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 using Inttegro.Money;
 
 namespace Inttegro;
+
+[JsonConverter(typeof(WireEnumJsonConverter<PriceType>))]
+public enum PriceType
+{
+    [EnumMember(Value = "fixed_amount")]
+    FixedAmount,
+    [EnumMember(Value = "customer_selected_amount")]
+    CustomerSelectedAmount
+}
+
+public sealed class SuggestedAmountParams
+{
+    [JsonPropertyName("id")] public string? Id { get; set; }
+    [JsonPropertyName("value")] public long? Value { get; set; }
+    [JsonPropertyName("recommended")] public bool? Recommended { get; set; }
+}
+
+public sealed class CustomerSelectedAmountParams
+{
+    [JsonPropertyName("currency")] public Currency? Currency { get; set; }
+    [JsonPropertyName("minimum")] public long? Minimum { get; set; }
+    [JsonPropertyName("maximum")] public long? Maximum { get; set; }
+    [JsonPropertyName("suggested_amounts")] public List<SuggestedAmountParams>? SuggestedAmounts { get; set; }
+}
+
+public sealed class SuggestedAmount
+{
+    [JsonPropertyName("id")] public string? Id { get; set; }
+    [JsonPropertyName("value")] public long? Value { get; set; }
+    [JsonPropertyName("recommended")] public bool? Recommended { get; set; }
+}
+
+public sealed class CustomerSelectedAmount
+{
+    [JsonPropertyName("currency")] public Currency? Currency { get; set; }
+    [JsonPropertyName("minimum")] public long? Minimum { get; set; }
+    [JsonPropertyName("maximum")] public long? Maximum { get; set; }
+    [JsonPropertyName("suggested_amounts")] public List<SuggestedAmount>? SuggestedAmounts { get; set; }
+}
 
 public sealed class CatalogPriceParams
 {
@@ -14,8 +54,14 @@ public sealed class CatalogPriceParams
     [JsonPropertyName("about")]
     public string? About { get; set; }
 
-    [JsonPropertyName("amount")]
-    public AmountParams? Amount { get; set; }
+    [JsonPropertyName("type")]
+    public PriceType? Type { get; set; }
+
+    [JsonPropertyName("fixed_amount")]
+    public AmountParams? FixedAmount { get; set; }
+
+    [JsonPropertyName("customer_selected_amount")]
+    public CustomerSelectedAmountParams? CustomerSelectedAmount { get; set; }
 }
 
 public sealed class PriceParams : AmountParams { }
@@ -69,8 +115,17 @@ public sealed class CatalogPrice
     [JsonPropertyName("active")]
     public bool Active { get; set; }
 
+    [JsonPropertyName("type")]
+    public PriceType Type { get; set; }
+
     [JsonPropertyName("nominal")]
     public Amount? Nominal { get; set; }
+
+    [JsonPropertyName("fixed_amount")]
+    public Amount? FixedAmount { get; set; }
+
+    [JsonPropertyName("customer_selected_amount")]
+    public CustomerSelectedAmount? CustomerSelectedAmount { get; set; }
 
     [JsonPropertyName("product_id")]
     public string? ProductId { get; set; }

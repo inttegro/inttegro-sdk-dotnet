@@ -1,5 +1,16 @@
 ## [Unreleased]
 
+## [10.2.0] - 2026-10-01
+
+- Added typed fixed and customer-selected catalog price definitions, suggested
+  contribution amounts, and order line items that couple a catalog price with
+  the amount selected by the customer.
+
+## [10.1.0] - 2026-09-27
+
+- Added the required application-scoped customer fingerprint to typed customer
+  responses for possible duplicate-record detection.
+
 ## [10.0.0] - 2026-09-23
 
 - Breaking: replaced payout `BalanceTransactions` ID strings with typed

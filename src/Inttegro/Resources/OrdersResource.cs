@@ -50,6 +50,7 @@ public class OrdersResource
     public Task<Order> UpdateAsync(OrderUpdateRequest payload, CancellationToken cancellationToken = default)
     {
         RequestValidator.Require(payload.OrderId, "order_id");
+        ValidateCustomerSelectedProducts(payload.LineItems);
         return PostOrderAsync("/orders/update", payload, cancellationToken);
     }
 
@@ -186,5 +187,18 @@ public class OrdersResource
             "Either 'customer_data' or 'customer_id' is required."
         );
         RequestValidator.RequireCollection(payload.LineItems, "line_items");
+        ValidateCustomerSelectedProducts(payload.LineItems);
+    }
+
+    private static void ValidateCustomerSelectedProducts(IEnumerable<LineItemParams>? lineItems)
+    {
+        if (lineItems == null)
+        {
+            return;
+        }
+        foreach (var lineItem in lineItems)
+        {
+            RequestValidator.ValidateCustomerSelectedProduct(lineItem.Product);
+        }
     }
 }

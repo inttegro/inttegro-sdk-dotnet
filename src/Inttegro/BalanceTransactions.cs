@@ -10,7 +10,9 @@ public enum BalanceTransactionType
     [EnumMember(Value = "payment")]
     Payment,
     [EnumMember(Value = "refund")]
-    Refund
+    Refund,
+    [EnumMember(Value = "payout")]
+    Payout
 }
 
 [JsonConverter(typeof(WireEnumJsonConverter<BalanceTransactionAllocationType>))]
@@ -72,7 +74,7 @@ public class BalanceTransactionAllocation
 }
 
 /// <summary>
-/// A merchant balance entry caused by a payment or refund. Type identifies the
+/// A merchant balance entry caused by a payment, refund, or payout. Type identifies the
 /// semantic source, not accounting direction, and exactly one matching source ID
 /// is present.
 /// </summary>
@@ -91,11 +93,10 @@ public class BalanceTransaction
     public string? RefundId { get; set; }
 
     [JsonPropertyName("payout_id")]
-    [Obsolete("Inspect Allocations because one payment transaction can fund many payouts.")]
     public string? PayoutId { get; set; }
 
     [JsonPropertyName("order_id")]
-    public string OrderId { get; set; } = string.Empty;
+    public string? OrderId { get; set; }
 
     [JsonPropertyName("amount")]
     public Amount Amount { get; set; } = new();
@@ -134,6 +135,7 @@ public class BalanceTransaction
     {
         BalanceTransactionType.Payment when !string.IsNullOrWhiteSpace(PaymentId) && RefundId is null => PaymentId,
         BalanceTransactionType.Refund when !string.IsNullOrWhiteSpace(RefundId) && PaymentId is null => RefundId,
+        BalanceTransactionType.Payout when !string.IsNullOrWhiteSpace(PayoutId) && PaymentId is null && RefundId is null && OrderId is null => PayoutId,
         _ => null
     };
 }
