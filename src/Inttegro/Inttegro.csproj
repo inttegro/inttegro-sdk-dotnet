@@ -7,7 +7,7 @@
     <Version>10.2.0</Version>
     <Authors>Inttegro Engineering</Authors>
     <Company>Inttegro</Company>
-    <Description>Typed .NET SDK for Inttegro GHS checkout and Ghana Mobile Money payments</Description>
+    <Description>Official .NET SDK for the Inttegro API</Description>
     <RepositoryUrl>https://github.com/inttegro/inttegro-sdk-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://dotnet.inttegro.dev/</PackageProjectUrl>

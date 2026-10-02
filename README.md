@@ -2,8 +2,7 @@
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/inttegro/inttegro-sdk-dotnet/badge)](https://scorecard.dev/viewer/?uri=github.com/inttegro/inttegro-sdk-dotnet)
 
-Accept GHS payments, present Ghana Mobile Money checkout, and manage orders,
-refunds, and payouts with Inttegro's typed server-side .NET SDK.
+The official .NET client for building server-side Inttegro integrations.
 
 [API documentation](https://dotnet.inttegro.dev/) · [Integration guides](https://studio.inttegro.com/sdks/dotnet)
 
