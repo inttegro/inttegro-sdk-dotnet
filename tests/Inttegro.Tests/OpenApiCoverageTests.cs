@@ -14,6 +14,7 @@ public class OpenApiCoverageTests
     private static readonly string[] ClientCheckoutOperations =
     [
         "/checkout/lookup",
+        "/checkout/select_amount",
         "/checkout/pay",
         "/checkout/request_confirmation",
         "/checkout/confirm_payment"

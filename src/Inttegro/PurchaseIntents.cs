@@ -57,6 +57,30 @@ public sealed class PurchaseIntentUsage
     public PurchaseIntentUsageOrder? Order { get; set; }
 }
 
+public sealed class PurchaseIntentBuyPageText
+{
+    [JsonPropertyName("checkout_section_title")]
+    public string? CheckoutSectionTitle { get; set; }
+
+    [JsonPropertyName("amount_field_label")]
+    public string? AmountFieldLabel { get; set; }
+
+    [JsonPropertyName("primary_action_label")]
+    public string? PrimaryActionLabel { get; set; }
+}
+
+public sealed class PurchaseIntentBuyPagePresentation
+{
+    [JsonPropertyName("text")]
+    public PurchaseIntentBuyPageText? Text { get; set; }
+}
+
+public sealed class PurchaseIntentPresentation
+{
+    [JsonPropertyName("buy_page")]
+    public PurchaseIntentBuyPagePresentation? BuyPage { get; set; }
+}
+
 public sealed class CreatePurchaseIntentParams
 {
     [JsonPropertyName("product")]
@@ -79,6 +103,30 @@ public sealed class CreatePurchaseIntentParams
 
     [JsonPropertyName("expires_at")]
     public DateTimeOffset? ExpiresAt { get; set; }
+
+    [JsonPropertyName("presentation")]
+    public PurchaseIntentPresentation? Presentation { get; set; }
+}
+
+public sealed class UpdatePurchaseIntentParams
+{
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("purchase_intent_id")]
+    public string? PurchaseIntentId { get; set; }
+
+    [JsonPropertyName("quantity")]
+    public PurchaseIntentQuantity? Quantity { get; set; }
+
+    [JsonPropertyName("expires_at")]
+    public DateTimeOffset? ExpiresAt { get; set; }
+
+    [JsonPropertyName("reactivate")]
+    public bool? Reactivate { get; set; }
+
+    [JsonPropertyName("presentation")]
+    public PurchaseIntentPresentation? Presentation { get; set; }
 }
 
 public sealed class PurchaseIntentOriginalPrice

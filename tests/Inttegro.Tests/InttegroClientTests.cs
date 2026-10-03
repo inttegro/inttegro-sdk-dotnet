@@ -134,7 +134,7 @@ public class InttegroClientTests
     public void PurchaseIntentExposesNestedResponseTypes()
     {
         const string json = """
-            {"allow_variants":false,"created_at":"2026-09-09T12:00:00Z","id":"sale_123","merchant":{"organization_name":"Tea House Ltd"},"product":{"active":true,"created_at":"2026-09-09T11:00:00Z","dimensions":{"digital":{"bytes":1024}},"id":"prod_123","name":"Tea guide","type":"digital"},"quantity":{"min":1},"status":"active","usage":{"order":{"created_at":"2026-09-09T12:02:00Z","id":"or_123"},"single_use":true}}
+            {"allow_variants":false,"created_at":"2026-09-09T12:00:00Z","id":"sale_123","merchant":{"organization_name":"Tea House Ltd"},"presentation":{"buy_page":{"text":{"checkout_section_title":"Support this cause"}}},"product":{"active":true,"created_at":"2026-09-09T11:00:00Z","dimensions":{"digital":{"bytes":1024}},"id":"prod_123","name":"Tea guide","type":"digital"},"quantity":{"min":1},"status":"active","usage":{"order":{"created_at":"2026-09-09T12:02:00Z","id":"or_123"},"single_use":true}}
             """;
 
         var intent = JsonSerializer.Deserialize<PurchaseIntent>(json)!;
@@ -144,6 +144,20 @@ public class InttegroClientTests
         Assert.Equal("or_123", intent.Usage.Order!.Id);
         Assert.Equal(PurchaseIntentStatus.Active, intent.Status);
         Assert.Equal(DateTimeOffset.Parse("2026-09-09T12:00:00Z"), intent.CreatedAt);
+        Assert.Equal("Support this cause", intent.Presentation!.BuyPage!.Text!.CheckoutSectionTitle);
+
+        var create = new CreatePurchaseIntentParams
+        {
+            Quantity = new PurchaseIntentQuantity { Min = 1 },
+            Presentation = new PurchaseIntentPresentation
+            {
+                BuyPage = new PurchaseIntentBuyPagePresentation
+                {
+                    Text = new PurchaseIntentBuyPageText { AmountFieldLabel = "Your contribution" }
+                }
+            }
+        };
+        Assert.Contains("\"amount_field_label\":\"Your contribution\"", JsonSerializer.Serialize(create));
     }
 
     [Fact]

@@ -26,6 +26,9 @@ public class PurchaseIntentsResource
     public Task<PurchaseIntent> UpdateAsync(object payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<PurchaseIntent>("/purchase_intents/update", "purchase_intent", payload, cancellationToken);
 
+    public Task<PurchaseIntent> UpdateAsync(UpdatePurchaseIntentParams payload, CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<PurchaseIntent>("/purchase_intents/update", "purchase_intent", payload, cancellationToken);
+
     public Task<PurchaseIntent> CancelAsync(string id, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<PurchaseIntent>("/purchase_intents/cancel", "purchase_intent", new { id }, cancellationToken);
 
