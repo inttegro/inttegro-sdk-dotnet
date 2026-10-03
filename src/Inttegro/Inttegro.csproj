@@ -12,7 +12,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://dotnet.inttegro.dev/</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>inttegro;payments;sdk;api</PackageTags>
+    <PackageTags>inttegro;payments;sdk;checkout;commerce;fintech;ghana;ghs;mobile-money</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
