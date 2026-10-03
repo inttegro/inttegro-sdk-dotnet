@@ -12,6 +12,7 @@ public sealed class PurchaseIntent
     [JsonPropertyName("inactive_at")] public DateTimeOffset? InactiveAt { get; set; }
     [JsonPropertyName("merchant")] public PurchaseIntentMerchant? Merchant { get; set; }
     [JsonPropertyName("price")] public PurchaseIntentPrice? Price { get; set; }
+    [JsonPropertyName("presentation")] public PurchaseIntentPresentation? Presentation { get; set; }
     [JsonPropertyName("product")] public PurchaseIntentProduct? Product { get; set; }
     [JsonPropertyName("quantity")] public PurchaseIntentQuantity Quantity { get; set; } = null!;
     [JsonPropertyName("status")] public PurchaseIntentStatus Status { get; set; }
