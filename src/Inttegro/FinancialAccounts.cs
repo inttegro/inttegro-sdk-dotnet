@@ -127,7 +127,7 @@ public sealed class FinancialAccount
     public string? Description { get; set; }
 
     [JsonPropertyName("fingerprint")]
-    public string? Fingerprint { get; set; }
+    public required string Fingerprint { get; set; }
 
     [JsonPropertyName("reference")]
     public string? Reference { get; set; }
