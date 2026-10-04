@@ -853,7 +853,8 @@ public class InttegroClientTests
             "/balance_transactions/page" => "{\"page\":{}}",
             "/balance_transactions/lookup" => "{\"transaction\":{}}",
             "/financial_accounts/page" => "{\"page\":{}}",
-            var value when value.StartsWith("/financial_accounts/", StringComparison.Ordinal) => "{\"account\":{}}",
+            var value when value.StartsWith("/financial_accounts/", StringComparison.Ordinal) =>
+                "{\"account\":{\"fingerprint\":\"fa_app_123\"}}",
             "/customers/page" => "{\"page\":{}}",
             var value when value.StartsWith("/customers/", StringComparison.Ordinal) =>
                 "{\"customer\":{\"fingerprint\":\"cfp_v1_app_buyer\"}}",
