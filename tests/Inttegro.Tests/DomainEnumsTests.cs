@@ -26,6 +26,7 @@ public sealed class DomainEnumsTests
     {
         var account = new FinancialAccount
         {
+            Fingerprint = "fa_app_123",
             Type = FinancialAccountType.Wallet,
             Wallet = new WalletConfig
             {
