@@ -177,6 +177,7 @@ public sealed class Payout
     [JsonPropertyName("destination_id")]
     public string? DestinationId { get; set; }
 
+    [Obsolete("Use Failure for stable, caller-safe failure information.")]
     [JsonPropertyName("error")]
     public PayoutError? Error { get; set; }
 
@@ -191,6 +192,9 @@ public sealed class Payout
 
     [JsonPropertyName("failed_at")]
     public DateTimeOffset? FailedAt { get; set; }
+
+    [JsonPropertyName("failure")]
+    public PayoutFailure? Failure { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -248,4 +252,12 @@ public sealed class PayoutError
     [JsonPropertyName("message")] public string? Message { get; set; }
     [JsonPropertyName("occurred_at")] public DateTimeOffset? OccurredAt { get; set; }
     [JsonPropertyName("type")] public string? Type { get; set; }
+}
+
+/// <summary>Caller-safe information about a terminal payout failure.</summary>
+public sealed class PayoutFailure
+{
+    [JsonPropertyName("detail")] public string? Detail { get; set; }
+    [JsonPropertyName("reason")] public PayoutFailureReason Reason { get; set; }
+    [JsonPropertyName("retryable")] public bool Retryable { get; set; }
 }
