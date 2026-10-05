@@ -1,12 +1,18 @@
 ## [Unreleased]
 
+## [11.0.0] - 2026-10-05
+
+- **Breaking:** replaced the payout status `invalid` with `failed`.
+- Added typed payout failure details with a stable reason, caller-safe detail,
+  retry guidance, and a separate lifecycle timestamp.
+- Added the application-scoped financial-account fingerprint to typed
+  responses.
+
 ## [10.3.0] - 2026-10-03
 
 - Added typed hosted Buy-page text overrides to Purchase Intent create,
   update, and response models, including explicit default restoration through
   the wire-shaped update overload.
-- Added the application-scoped financial-account fingerprint to typed
-  responses.
 
 ## [10.2.0] - 2026-10-01
 
