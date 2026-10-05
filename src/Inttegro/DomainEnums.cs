@@ -100,7 +100,10 @@ public enum OrderStatus { [EnumMember(Value = "preparing")] Preparing, [EnumMemb
 public enum OrderCreatedFromResourceType { [EnumMember(Value = "purchase_intent")] PurchaseIntent }
 
 [JsonConverter(typeof(WireEnumJsonConverter<PayoutStatus>))]
-public enum PayoutStatus { [EnumMember(Value = "initialized")] Initialized, [EnumMember(Value = "scheduled")] Scheduled, [EnumMember(Value = "processing")] Processing, [EnumMember(Value = "executing")] Executing, [EnumMember(Value = "succeeded")] Succeeded, [EnumMember(Value = "invalid")] Invalid, [EnumMember(Value = "canceled")] Canceled }
+public enum PayoutStatus { [EnumMember(Value = "initialized")] Initialized, [EnumMember(Value = "scheduled")] Scheduled, [EnumMember(Value = "processing")] Processing, [EnumMember(Value = "executing")] Executing, [EnumMember(Value = "succeeded")] Succeeded, [EnumMember(Value = "failed")] Failed, [EnumMember(Value = "canceled")] Canceled }
+
+[JsonConverter(typeof(WireEnumJsonConverter<PayoutFailureReason>))]
+public enum PayoutFailureReason { [EnumMember(Value = "provider_declined")] ProviderDeclined, [EnumMember(Value = "delivery_failed")] DeliveryFailed, [EnumMember(Value = "temporarily_unavailable")] TemporarilyUnavailable, [EnumMember(Value = "unknown")] Unknown }
 
 [JsonConverter(typeof(WireEnumJsonConverter<ChimeRecipientType>))]
 public enum ChimeRecipientType { [EnumMember(Value = "phone")] Phone, [EnumMember(Value = "email")] Email }
