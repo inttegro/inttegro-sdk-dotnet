@@ -296,6 +296,7 @@ public sealed class Payment
     [JsonPropertyName("payment_method")] public PaymentMethodSnapshot? PaymentMethod { get; set; }
     [JsonPropertyName("billing_details")] public PaymentBillingDetails? BillingDetails { get; set; }
     [JsonPropertyName("customer")] public PaymentCustomer? Customer { get; set; }
+    [JsonPropertyName("receipt")] public OrderReceipt? Receipt { get; set; }
     [JsonPropertyName("latest_attempt")] public PaymentAttempt? LatestAttempt { get; set; }
     [JsonPropertyName("amount")] public Amount Amount { get; set; } = new();
     [JsonPropertyName("next_action")] public PaymentNextAction? NextAction { get; set; }

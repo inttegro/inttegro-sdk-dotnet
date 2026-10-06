@@ -295,15 +295,33 @@ public sealed class OrderInvoiceFormat
 
     [JsonPropertyName("pdf")]
     public InvoiceUrl Pdf { get; set; } = new();
-
-    [JsonPropertyName("receipt")]
-    public InvoiceUrl? Receipt { get; set; }
 }
 
 public sealed class InvoiceUrl
 {
     [JsonPropertyName("url")]
     public string Url { get; set; } = string.Empty;
+}
+
+public sealed class OrderReceiptFormat
+{
+    [JsonPropertyName("web")]
+    public InvoiceUrl Web { get; set; } = new();
+
+    [JsonPropertyName("pdf")]
+    public InvoiceUrl Pdf { get; set; } = new();
+}
+
+public sealed class OrderReceipt
+{
+    [JsonPropertyName("number")]
+    public string? Number { get; set; }
+
+    [JsonPropertyName("format")]
+    public OrderReceiptFormat Format { get; set; } = new();
+
+    [JsonPropertyName("delivery_summary")]
+    public JsonElement? DeliverySummary { get; set; }
 }
 
 public sealed class OrderInvoice
