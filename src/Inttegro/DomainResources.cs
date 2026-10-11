@@ -12,6 +12,7 @@ public sealed class App
     [JsonPropertyName("created_at")] public DateTimeOffset? CreatedAt { get; set; }
     [JsonPropertyName("updated_at")] public DateTimeOffset? UpdatedAt { get; set; }
     [JsonPropertyName("archived_at")] public DateTimeOffset? ArchivedAt { get; set; }
+    [JsonPropertyName("capabilities")] public Dictionary<string, object?> Capabilities { get; set; } = new();
     [JsonPropertyName("secret_key")] public GeneratedSecretKey? SecretKey { get; set; }
     [JsonPropertyName("relationship")] public AppRelationship? Relationship { get; set; }
 }
@@ -20,15 +21,16 @@ public sealed class AppRelationship
 {
     [JsonPropertyName("id")] public string? Id { get; set; }
     [JsonPropertyName("kind")] public string? Kind { get; set; }
+    [JsonPropertyName("parent")] public AppRelationshipParent? Parent { get; set; }
     [JsonPropertyName("status")] public string? Status { get; set; }
-    [JsonPropertyName("actor_app_id")] public string? ActorAppId { get; set; }
-    [JsonPropertyName("creator_app_id")] public string? CreatorAppId { get; set; }
-    [JsonPropertyName("placement_parent_app_id")] public string? PlacementParentAppId { get; set; }
-    [JsonPropertyName("subject_app_id")] public string? SubjectAppId { get; set; }
-    [JsonPropertyName("child_app_id")] public string? ChildAppId { get; set; }
-    [JsonPropertyName("child_standing")] public string? ChildStanding { get; set; }
-    [JsonPropertyName("relationship_policy")] public AppRelationshipPolicy? RelationshipPolicy { get; set; }
     [JsonPropertyName("created_at")] public DateTimeOffset? CreatedAt { get; set; }
+}
+
+public sealed class AppRelationshipParent
+{
+    [JsonPropertyName("id")] public string? Id { get; set; }
+    [JsonPropertyName("name")] public string? Name { get; set; }
+    [JsonPropertyName("alias")] public string? Alias { get; set; }
 }
 
 public sealed class AppRelationshipPolicy
