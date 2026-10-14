@@ -19,6 +19,9 @@ public sealed class PayoutSettingsLookup
     [JsonPropertyName("destinations")]
     public PayoutDestinations? Destinations { get; set; }
 
+    [JsonPropertyName("limits")]
+    public required PayoutSettingsLimits Limits { get; set; }
+
     [JsonPropertyName("schedule")]
     public PayoutSettingsLookupSchedule? Schedule { get; set; }
 }
@@ -35,8 +38,28 @@ public sealed class PayoutSettingsMutation
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    [JsonPropertyName("limits")]
+    public required PayoutSettingsLimits Limits { get; set; }
+
     [JsonPropertyName("schedule")]
     public PayoutSettingsMutationSchedule? Schedule { get; set; }
+}
+
+/// <summary>Platform limits applied to payouts.</summary>
+public sealed class PayoutSettingsLimits
+{
+    [JsonPropertyName("amount")]
+    public required PayoutAmountLimits Amount { get; set; }
+}
+
+/// <summary>Inclusive payout amount range.</summary>
+public sealed class PayoutAmountLimits
+{
+    [JsonPropertyName("min")]
+    public required Amount Min { get; set; }
+
+    [JsonPropertyName("max")]
+    public required Amount Max { get; set; }
 }
 
 /// <summary>Active payout schedule returned by the settings endpoint.</summary>
