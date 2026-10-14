@@ -344,6 +344,7 @@ public class InttegroClientTests
 
         await client.Apps.CreateAsync(new { name = "My App" });
         await client.Apps.LookupAsync();
+        await client.Apps.CapabilitiesAsync();
         await client.Apps.UpdateAsync(new { alias = "my-app" });
         await client.Keys.GenerateAsync(new { label = "Production" });
         await client.Keys.LookupAsync("sk_1");
@@ -454,6 +455,7 @@ public class InttegroClientTests
             "/otp/cancel",
             "/apps/create",
             "/apps/lookup",
+            "/apps/capabilities",
             "/apps/update",
             "/keys/generate",
             "/keys/lookup",
@@ -874,6 +876,7 @@ public class InttegroClientTests
 
             "/otp/verify" => "{}",
             var value when value.StartsWith("/otp/", StringComparison.Ordinal) => "{\"transaction\":{}}",
+            "/apps/capabilities" => "{\"capabilities\":{\"payments\":{\"status\":\"enabled\",\"status_changed_at\":\"2026-07-10T00:00:00Z\"},\"payouts\":{\"status\":\"enabled\",\"status_changed_at\":\"2026-07-10T00:00:00Z\"}}}",
             var value when value.StartsWith("/apps/", StringComparison.Ordinal) => "{\"app\":{}}",
             "/keys/page" => "{\"page\":{}}",
             "/keys/usage" => "{}",

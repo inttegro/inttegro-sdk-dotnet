@@ -33,6 +33,32 @@ public sealed class AppRelationshipParent
     [JsonPropertyName("alias")] public string? Alias { get; set; }
 }
 
+public sealed class AppCapabilityRequirement
+{
+    [JsonPropertyName("code")] public string Code { get; set; } = null!;
+    [JsonPropertyName("description")] public string Description { get; set; } = null!;
+    [JsonPropertyName("due_at")] public DateTimeOffset? DueAt { get; set; }
+}
+
+public sealed class AppCapabilityRequirements
+{
+    [JsonPropertyName("currently_due")] public List<AppCapabilityRequirement> CurrentlyDue { get; set; } = [];
+}
+
+public sealed class AppCapability
+{
+    [JsonPropertyName("status")] public string Status { get; set; } = null!;
+    [JsonPropertyName("status_changed_at")] public DateTimeOffset StatusChangedAt { get; set; }
+    [JsonPropertyName("status_reason")] public string? StatusReason { get; set; }
+    [JsonPropertyName("requirements")] public AppCapabilityRequirements? Requirements { get; set; }
+}
+
+public sealed class AppCapabilities
+{
+    [JsonPropertyName("payments")] public AppCapability Payments { get; set; } = null!;
+    [JsonPropertyName("payouts")] public AppCapability Payouts { get; set; } = null!;
+}
+
 public sealed class AppRelationshipPolicy
 {
     [JsonPropertyName("child_standing")] public string? ChildStanding { get; set; }
