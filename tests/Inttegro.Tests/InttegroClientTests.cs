@@ -850,7 +850,7 @@ public class InttegroClientTests
 
             "/payouts/page" => "{\"page\":{}}",
             "/payouts/lookup" or "/payouts/schedule" or "/payouts/cancel" => "{\"payout\":{}}",
-            var value when value.StartsWith("/payouts/", StringComparison.Ordinal) => "{\"settings\":{}}",
+            var value when value.StartsWith("/payouts/", StringComparison.Ordinal) => "{\"settings\":{\"limits\":{\"amount\":{\"min\":{\"currency\":\"ghs\",\"value\":25000},\"max\":{\"currency\":\"ghs\",\"value\":9999999}}}}}",
 
             "/balance_transactions/page" => "{\"page\":{}}",
             "/balance_transactions/lookup" => "{\"transaction\":{}}",
