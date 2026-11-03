@@ -87,6 +87,9 @@ public sealed class PayoutSettingsLookupSchedule
 /// <summary>Rules that determine when balance transactions become eligible for payout.</summary>
 public sealed class PayoutSettingsLookupScheduleAgingSpec
 {
+    [JsonPropertyName("public_id")]
+    public string? PublicId { get; set; }
+
     [JsonPropertyName("t_plus")]
     public string? TPlus { get; set; }
 
@@ -128,8 +131,8 @@ public sealed class PayoutSettingsMutationScheduleSpec
     [JsonPropertyName("abide")]
     public string? Abide { get; set; }
 
-    [JsonPropertyName("id")]
-    public string? Id { get; set; }
+    [JsonPropertyName("public_id")]
+    public string? PublicId { get; set; }
 
     [JsonPropertyName("label")]
     public string? Label { get; set; }

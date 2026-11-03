@@ -38,9 +38,10 @@ public sealed class SemanticCollectionsTests
 
         var settings = JsonSerializer.Deserialize<PayoutSettingsLookup>(
             """
-            {"destinations":{"ghs":"fa_ghs"},"limits":{"amount":{"min":{"currency":"ghs","value":25000},"max":{"currency":"ghs","value":9999999}}},"schedule":{"aging_spec":{"abide":"strict","label":"Seven days","t_plus":"168h"},"description":"Weekly payouts","interval":"weekly","name":"Weekly","schedule_on":"monday","type":"automatic"}}
+            {"destinations":{"ghs":"fa_ghs"},"limits":{"amount":{"min":{"currency":"ghs","value":25000},"max":{"currency":"ghs","value":9999999}}},"schedule":{"aging_spec":{"abide":"strict","public_id":"bt_aging_spec_168_hourly","label":"Seven days","t_plus":"168h"},"description":"Weekly payouts","interval":"weekly","name":"Weekly","schedule_on":"monday","type":"automatic"}}
             """);
         Assert.Equal("fa_ghs", settings!.Destinations!.GHS);
+        Assert.Equal("bt_aging_spec_168_hourly", settings.Schedule!.AgingSpec!.PublicId);
         Assert.Equal(25000, settings.Limits.Amount.Min.Value);
         Assert.Equal(9999999, settings.Limits.Amount.Max.Value);
         Assert.Equal("168h", settings.Schedule!.AgingSpec!.TPlus);
