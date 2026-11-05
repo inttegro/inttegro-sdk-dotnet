@@ -61,7 +61,6 @@ public sealed class ChildrenPolicyCapabilities
 public sealed class ChildrenPolicy
 {
     [JsonPropertyName("id")] public string Id { get; set; } = null!;
-    [JsonPropertyName("owner_application_id")] public string OwnerApplicationId { get; set; } = null!;
     [JsonPropertyName("version")] public int Version { get; set; }
     [JsonPropertyName("active_version")] public int ActiveVersion { get; set; }
     [JsonPropertyName("name")] public string Name { get; set; } = null!;
