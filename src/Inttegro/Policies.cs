@@ -71,6 +71,30 @@ public sealed class ChildrenPolicy
     [JsonPropertyName("version_created_at")] public DateTimeOffset VersionCreatedAt { get; set; }
 }
 
+/// <summary>Parameters for retrieving the latest or an exact children-policy version.</summary>
+public sealed class LookupChildrenPolicyRequest
+{
+    [JsonPropertyName("version")] public int? Version { get; set; }
+}
+
+/// <summary>Optional pagination parameters for listing children-policy versions.</summary>
+public sealed class PageChildrenPoliciesRequest
+{
+    [JsonPropertyName("number")] public int? Number { get; set; }
+    [JsonPropertyName("size")] public int? Size { get; set; }
+}
+
+/// <summary>A page of immutable children-policy versions, newest first.</summary>
+public sealed class ChildrenPolicyPage
+{
+    [JsonPropertyName("number")] public int Number { get; set; }
+    [JsonPropertyName("size")] public int Size { get; set; }
+    [JsonPropertyName("count")] public int Count { get; set; }
+    [JsonPropertyName("total")] public long Total { get; set; }
+    [JsonPropertyName("has_more")] public bool HasMore { get; set; }
+    [JsonPropertyName("versions")] public List<ChildrenPolicy> Versions { get; set; } = [];
+}
+
 public sealed class OperatingPolicyPaymentsCapabilitiesInput
 {
     [JsonPropertyName("currencies")] public List<string>? Currencies { get; set; }
@@ -157,6 +181,32 @@ public sealed class OperatingPolicy
     [JsonPropertyName("created_at")] public DateTimeOffset CreatedAt { get; set; }
     [JsonPropertyName("updated_at")] public DateTimeOffset UpdatedAt { get; set; }
     [JsonPropertyName("version_created_at")] public DateTimeOffset VersionCreatedAt { get; set; }
+}
+
+/// <summary>Parameters for retrieving the latest or an exact operating-policy version.</summary>
+public sealed class LookupOperatingPolicyRequest
+{
+    [JsonPropertyName("operating_policy_id")] public string OperatingPolicyId { get; set; } = null!;
+    [JsonPropertyName("version")] public int? Version { get; set; }
+}
+
+/// <summary>Parameters for listing versions of one operating policy.</summary>
+public sealed class PageOperatingPoliciesRequest
+{
+    [JsonPropertyName("operating_policy_id")] public string OperatingPolicyId { get; set; } = null!;
+    [JsonPropertyName("number")] public int? Number { get; set; }
+    [JsonPropertyName("size")] public int? Size { get; set; }
+}
+
+/// <summary>A page of immutable operating-policy versions, newest first.</summary>
+public sealed class OperatingPolicyPage
+{
+    [JsonPropertyName("number")] public int Number { get; set; }
+    [JsonPropertyName("size")] public int Size { get; set; }
+    [JsonPropertyName("count")] public int Count { get; set; }
+    [JsonPropertyName("total")] public long Total { get; set; }
+    [JsonPropertyName("has_more")] public bool HasMore { get; set; }
+    [JsonPropertyName("versions")] public List<OperatingPolicy> Versions { get; set; } = [];
 }
 
 public sealed class CreateAppRequest
