@@ -7,7 +7,7 @@ namespace Inttegro;
 
 public class InttegroClient : IDisposable
 {
-    public const string Version = "10.2.0";
+    public const string Version = "12.1.0";
     public const string ActivitySourceName = "Inttegro";
     public static readonly ActivitySource ActivitySource = new(ActivitySourceName, Version);
 
@@ -32,6 +32,8 @@ public class InttegroClient : IDisposable
     public MessageTemplatesResource MessageTemplates { get; }
     public OtpResource Otp { get; }
     public AppsResource Apps { get; }
+    public ChildrenPoliciesResource ChildrenPolicies { get; }
+    public OperatingPoliciesResource OperatingPolicies { get; }
     public KeysResource Keys { get; }
     public SpecResource Spec { get; }
     public BalancesResource Balances { get; }
@@ -79,6 +81,8 @@ public class InttegroClient : IDisposable
         MessageTemplates = new MessageTemplatesResource(_apiClient);
         Otp = new OtpResource(_apiClient);
         Apps = new AppsResource(_apiClient);
+        ChildrenPolicies = new ChildrenPoliciesResource(_apiClient);
+        OperatingPolicies = new OperatingPoliciesResource(_apiClient);
         Keys = new KeysResource(_apiClient);
         Spec = new SpecResource(_apiClient);
         Balances = new BalancesResource(_apiClient);
