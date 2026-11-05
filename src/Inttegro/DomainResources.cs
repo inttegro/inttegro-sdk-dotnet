@@ -15,6 +15,7 @@ public sealed class App
     [JsonPropertyName("capabilities")] public Dictionary<string, object?> Capabilities { get; set; } = new();
     [JsonPropertyName("secret_key")] public GeneratedSecretKey? SecretKey { get; set; }
     [JsonPropertyName("relationship")] public AppRelationship? Relationship { get; set; }
+    [JsonPropertyName("operating_policy")] public ApplicationOperatingPolicy? OperatingPolicy { get; set; }
 }
 
 public sealed class AppRelationship
