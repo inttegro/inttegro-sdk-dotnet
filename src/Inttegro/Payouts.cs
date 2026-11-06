@@ -270,6 +270,9 @@ public sealed class PayoutBalanceTransaction
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("status")]
+    public PayoutBalanceTransactionStatus Status { get; set; }
 }
 
 public sealed class PayoutError
