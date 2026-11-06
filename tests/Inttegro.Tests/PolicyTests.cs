@@ -58,7 +58,7 @@ public class PolicyTests
               "version":2,
               "active_version":2,
               "name":"Retail",
-              "capabilities":{"payouts":{"enabled":false,"bt_aging_spec":{"public_id":"bt_aging_spec_immediate","t_plus":"0h"}}},
+              "capabilities":{"payouts":{"enabled":false,"bt_aging_spec":{"id":"bt_aging_spec_immediate","t_plus":"0h"}}},
               "children_policy_id":"cp_123",
               "children_policy_version":1,
               "created_at":"2026-11-05T10:00:00Z",
@@ -80,7 +80,7 @@ public class PolicyTests
         var policy = JsonSerializer.Deserialize<OperatingPolicy>(policyJson)!;
         var app = JsonSerializer.Deserialize<App>(appJson)!;
 
-        Assert.Equal("bt_aging_spec_immediate", policy.Capabilities.Payouts!.BTAgingSpec!.PublicId);
+        Assert.Equal("bt_aging_spec_immediate", policy.Capabilities.Payouts!.BTAgingSpec!.Id);
         Assert.Equal("0h", policy.Capabilities.Payouts.BTAgingSpec.TPlus);
         Assert.Equal("op_123", app.OperatingPolicy!.Source.Id);
         Assert.Equal("ghs", Assert.Single(app.OperatingPolicy.Capabilities.Payments!.Currencies!));

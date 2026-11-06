@@ -17,7 +17,7 @@ public sealed class SemanticCollectionsTests
               "initiated_at":"2026-09-14T08:55:00Z",
               "max_amount":{"currency":"ghs","value":12500},
               "status":"failed",
-              "balance_transactions":[{"id":"bt_123","amount":{"currency":"ghs","value":20000},"allocated_amount":{"currency":"ghs","value":12500}}],
+              "balance_transactions":[{"id":"bt_123","amount":{"currency":"ghs","value":20000},"allocated_amount":{"currency":"ghs","value":12500},"status":"reserved"}],
               "custom_data":{"batch":"weekly"},
               "error":{"cause":"temporarily_unavailable","message":"Payout processing was temporarily unavailable.","occurred_at":"2026-09-14T09:05:00Z","type":"temporarily_unavailable"},
               "failed_at":"2026-09-14T09:05:00Z",
@@ -30,6 +30,7 @@ public sealed class SemanticCollectionsTests
         Assert.Equal("bt_123", contribution.Id);
         Assert.Equal(20000, contribution.Amount!.Value);
         Assert.Equal(12500, contribution.AllocatedAmount!.Value);
+        Assert.Equal(PayoutBalanceTransactionStatus.Reserved, contribution.Status);
         Assert.Equal("weekly", payout.CustomData!["batch"]);
         Assert.Equal("temporarily_unavailable", payout.Error!.Type);
         Assert.Equal(DateTimeOffset.Parse("2026-09-14T09:05:00Z"), payout.FailedAt);

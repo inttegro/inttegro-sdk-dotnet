@@ -13,6 +13,7 @@ public sealed class App
     [JsonPropertyName("updated_at")] public DateTimeOffset? UpdatedAt { get; set; }
     [JsonPropertyName("archived_at")] public DateTimeOffset? ArchivedAt { get; set; }
     [JsonPropertyName("capabilities")] public Dictionary<string, object?> Capabilities { get; set; } = new();
+    [JsonPropertyName("children_policy")] public ChildrenPolicy? ChildrenPolicy { get; set; }
     [JsonPropertyName("secret_key")] public GeneratedSecretKey? SecretKey { get; set; }
     [JsonPropertyName("relationship")] public AppRelationship? Relationship { get; set; }
     [JsonPropertyName("operating_policy")] public ApplicationOperatingPolicy? OperatingPolicy { get; set; }

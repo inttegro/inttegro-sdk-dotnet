@@ -102,6 +102,9 @@ public enum OrderCreatedFromResourceType { [EnumMember(Value = "purchase_intent"
 [JsonConverter(typeof(WireEnumJsonConverter<PayoutStatus>))]
 public enum PayoutStatus { [EnumMember(Value = "initialized")] Initialized, [EnumMember(Value = "scheduled")] Scheduled, [EnumMember(Value = "processing")] Processing, [EnumMember(Value = "executing")] Executing, [EnumMember(Value = "succeeded")] Succeeded, [EnumMember(Value = "failed")] Failed, [EnumMember(Value = "canceled")] Canceled }
 
+[JsonConverter(typeof(WireEnumJsonConverter<PayoutBalanceTransactionStatus>))]
+public enum PayoutBalanceTransactionStatus { [EnumMember(Value = "reserved")] Reserved, [EnumMember(Value = "completed")] Completed, [EnumMember(Value = "released")] Released }
+
 [JsonConverter(typeof(WireEnumJsonConverter<PayoutFailureReason>))]
 public enum PayoutFailureReason { [EnumMember(Value = "provider_declined")] ProviderDeclined, [EnumMember(Value = "delivery_failed")] DeliveryFailed, [EnumMember(Value = "temporarily_unavailable")] TemporarilyUnavailable, [EnumMember(Value = "unknown")] Unknown }
 

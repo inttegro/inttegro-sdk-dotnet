@@ -15,7 +15,7 @@ public sealed class PolicyLimits
 
 public sealed class PolicyBTAgingSpec
 {
-    [JsonPropertyName("public_id")] public string PublicId { get; set; } = null!;
+    [JsonPropertyName("id")] public string Id { get; set; } = null!;
     [JsonPropertyName("t_plus")] public string TPlus { get; set; } = null!;
 }
 
