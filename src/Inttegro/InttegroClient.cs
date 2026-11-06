@@ -7,7 +7,7 @@ namespace Inttegro;
 
 public class InttegroClient : IDisposable
 {
-    public const string Version = "12.1.0";
+    public const string Version = "13.0.0";
     public const string ActivitySourceName = "Inttegro";
     public static readonly ActivitySource ActivitySource = new(ActivitySourceName, Version);
 
