@@ -336,7 +336,7 @@ public class InttegroClientTests
             recipient = "+233",
             sender = "Acme",
             service_name = "Acme Bank",
-            idempotency_key = "otp_login_1700000000"
+            request_meta = new { idempotency_key = "otp_login_1700000000" }
         });
         await client.Otp.VerifyAsync(new { transaction_id = "txn_1", recipient = "+233", token = "123456" });
         await client.Otp.LookupAsync(new { transaction_id = "txn_1" });
@@ -544,19 +544,18 @@ public class InttegroClientTests
     }
 
     [Fact]
-    public async Task MutatingPostsGenerateRequestMetaIdempotencyKey()
+    public async Task MutatingPostsRejectTopLevelIdempotencyKey()
     {
         var handler = new RecordingHandler();
         var httpClient = new HttpClient(handler) { BaseAddress = new Uri("https://api.inttegro.com") };
         var client = new InttegroClient("test", httpClient: httpClient);
 
-        await client.Orders.CreateAsync(new { number = "ORDER-1", idempotency_key = "legacy" });
+        var error = await Assert.ThrowsAsync<ArgumentException>(
+            () => client.Orders.CreateAsync(new { number = "ORDER-1", idempotency_key = "legacy" })
+        );
 
-        using var document = JsonDocument.Parse(handler.Bodies.Single());
-        var root = document.RootElement;
-        Assert.False(root.TryGetProperty("idempotency_key", out _));
-        var key = root.GetProperty("request_meta").GetProperty("idempotency_key").GetString();
-        Assert.Matches(UuidV7Regex, key!);
+        Assert.Contains("top-level idempotency_key is not supported", error.Message);
+        Assert.Empty(handler.Bodies);
     }
 
     [Fact]
