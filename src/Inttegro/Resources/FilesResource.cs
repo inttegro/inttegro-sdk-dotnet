@@ -14,14 +14,6 @@ public sealed class FilesResource
     public Task<StoredFile> CreateAsync(object payload, string? idempotencyKey, CancellationToken cancellationToken = default)
     {
         var values = ToDictionary(payload);
-        if (values.Keys.Any(key =>
-            string.Equals(key, "idempotency_key", StringComparison.OrdinalIgnoreCase) ||
-            string.Equals(key, "IdempotencyKey", StringComparison.Ordinal)))
-        {
-            throw new ArgumentException(
-                "top-level idempotency_key is not supported; pass the idempotencyKey method argument to use the Idempotency-Key header"
-            );
-        }
         var headers = Headers(idempotencyKey);
         var file = values["file"]?.ToString() ?? throw new ArgumentException("file is required");
         values.Remove("file");

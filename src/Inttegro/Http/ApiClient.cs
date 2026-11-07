@@ -250,12 +250,6 @@ internal class ApiClient : IDisposable
             return json;
         }
 
-        if (obj.ContainsKey("idempotency_key"))
-        {
-            throw new ArgumentException(
-                "top-level idempotency_key is not supported; use request_meta.idempotency_key or the Idempotency-Key header"
-            );
-        }
         if (!generateIdempotencyKey || !IsIdempotentMutationPath(path))
         {
             return obj.ToJsonString(_serializerOptions);

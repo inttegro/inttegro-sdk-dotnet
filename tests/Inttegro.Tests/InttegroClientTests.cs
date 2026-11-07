@@ -544,18 +544,18 @@ public class InttegroClientTests
     }
 
     [Fact]
-    public async Task MutatingPostsRejectTopLevelIdempotencyKey()
+    public async Task MutatingPostsGenerateRequestMetaIdempotencyKey()
     {
         var handler = new RecordingHandler();
         var httpClient = new HttpClient(handler) { BaseAddress = new Uri("https://api.inttegro.com") };
         var client = new InttegroClient("test", httpClient: httpClient);
 
-        var error = await Assert.ThrowsAsync<ArgumentException>(
-            () => client.Orders.CreateAsync(new { number = "ORDER-1", idempotency_key = "legacy" })
-        );
+        await client.Orders.CreateAsync(new { number = "ORDER-1" });
 
-        Assert.Contains("top-level idempotency_key is not supported", error.Message);
-        Assert.Empty(handler.Bodies);
+        using var document = JsonDocument.Parse(handler.Bodies.Single());
+        var root = document.RootElement;
+        var key = root.GetProperty("request_meta").GetProperty("idempotency_key").GetString();
+        Assert.Matches(UuidV7Regex, key!);
     }
 
     [Fact]
