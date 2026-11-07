@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Reflection;
 using Inttegro;
@@ -18,6 +19,29 @@ namespace Inttegro.Tests;
 public class InttegroClientTests
 {
     private static readonly Regex UuidV7Regex = new("^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$", RegexOptions.IgnoreCase);
+
+    [Fact]
+    public void RequestMetadataSerializesTypedResponseProjection()
+    {
+        var metadata = new RequestMeta
+        {
+            Response = new RequestResponse
+            {
+                Projection = new ResponseProjection()
+                    .Select("order", PropertySelection.Pick("id", "status", "customer.name"))
+                    .Select("payment", PropertySelection.Omit("latest_error"))
+            }
+        };
+        var options = new JsonSerializerOptions
+        {
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        };
+
+        Assert.Equal(
+            "{\"response\":{\"projection\":{\"order\":{\"pick\":[\"id\",\"status\",\"customer.name\"]},\"payment\":{\"omit\":[\"latest_error\"]}}}}",
+            JsonSerializer.Serialize(metadata, options)
+        );
+    }
 
     [Fact]
     public void AmountAndNetworkConstantsSerializeToLowercaseWireValues()

@@ -36,12 +36,6 @@ public enum LineItemType
     Discount
 }
 
-public sealed class RequestMeta
-{
-    [JsonPropertyName("idempotency_key")]
-    public string? IdempotencyKey { get; set; }
-}
-
 public sealed class ApiError
 {
     [JsonPropertyName("message")]
