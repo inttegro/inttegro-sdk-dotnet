@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [13.1.0] - 2026-11-07
+
+- Added typed response-projection metadata with resource-level `Pick` and
+  `Omit` selections.
+- Restricted idempotency keys to request metadata and the `Idempotency-Key`
+  header.
+
 ## [13.0.0] - 2026-11-06
 
 - **Breaking:** renamed the children-policy and operating-policy

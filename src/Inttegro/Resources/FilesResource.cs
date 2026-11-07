@@ -14,8 +14,7 @@ public sealed class FilesResource
     public Task<StoredFile> CreateAsync(object payload, string? idempotencyKey, CancellationToken cancellationToken = default)
     {
         var values = ToDictionary(payload);
-        var headers = Headers(idempotencyKey ?? values.GetValueOrDefault("idempotency_key")?.ToString());
-        values.Remove("idempotency_key");
+        var headers = Headers(idempotencyKey);
         var file = values["file"]?.ToString() ?? throw new ArgumentException("file is required");
         values.Remove("file");
         return _client.PostMultipartResourceAsync<StoredFile>("/files/create", "file", values, new Dictionary<string, string> { ["file"] = file }, headers, cancellationToken);

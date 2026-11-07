@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Reflection;
 using Inttegro;
@@ -18,6 +19,29 @@ namespace Inttegro.Tests;
 public class InttegroClientTests
 {
     private static readonly Regex UuidV7Regex = new("^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$", RegexOptions.IgnoreCase);
+
+    [Fact]
+    public void RequestMetadataSerializesTypedResponseProjection()
+    {
+        var metadata = new RequestMeta
+        {
+            Response = new RequestResponse
+            {
+                Projection = new ResponseProjection()
+                    .Select("order", PropertySelection.Pick("id", "status", "customer.name"))
+                    .Select("payment", PropertySelection.Omit("latest_error"))
+            }
+        };
+        var options = new JsonSerializerOptions
+        {
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        };
+
+        Assert.Equal(
+            "{\"response\":{\"projection\":{\"order\":{\"pick\":[\"id\",\"status\",\"customer.name\"]},\"payment\":{\"omit\":[\"latest_error\"]}}}}",
+            JsonSerializer.Serialize(metadata, options)
+        );
+    }
 
     [Fact]
     public void AmountAndNetworkConstantsSerializeToLowercaseWireValues()
@@ -336,7 +360,7 @@ public class InttegroClientTests
             recipient = "+233",
             sender = "Acme",
             service_name = "Acme Bank",
-            idempotency_key = "otp_login_1700000000"
+            request_meta = new { idempotency_key = "otp_login_1700000000" }
         });
         await client.Otp.VerifyAsync(new { transaction_id = "txn_1", recipient = "+233", token = "123456" });
         await client.Otp.LookupAsync(new { transaction_id = "txn_1" });
@@ -550,11 +574,10 @@ public class InttegroClientTests
         var httpClient = new HttpClient(handler) { BaseAddress = new Uri("https://api.inttegro.com") };
         var client = new InttegroClient("test", httpClient: httpClient);
 
-        await client.Orders.CreateAsync(new { number = "ORDER-1", idempotency_key = "legacy" });
+        await client.Orders.CreateAsync(new { number = "ORDER-1" });
 
         using var document = JsonDocument.Parse(handler.Bodies.Single());
         var root = document.RootElement;
-        Assert.False(root.TryGetProperty("idempotency_key", out _));
         var key = root.GetProperty("request_meta").GetProperty("idempotency_key").GetString();
         Assert.Matches(UuidV7Regex, key!);
     }

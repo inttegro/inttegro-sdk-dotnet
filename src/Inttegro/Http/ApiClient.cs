@@ -250,7 +250,6 @@ internal class ApiClient : IDisposable
             return json;
         }
 
-        obj.Remove("idempotency_key");
         if (!generateIdempotencyKey || !IsIdempotentMutationPath(path))
         {
             return obj.ToJsonString(_serializerOptions);
