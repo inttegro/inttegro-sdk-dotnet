@@ -75,9 +75,10 @@ public class InttegroClientTests
         );
         Assert.DoesNotContain("\"amount\"", JsonSerializer.Serialize(productPrice));
         var catalogPrice = JsonSerializer.Deserialize<CatalogPrice>(
-            "{\"id\":\"pr_123\",\"active\":true,\"type\":\"fixed_amount\",\"nominal\":{\"currency\":\"ghs\",\"value\":3005},\"fixed_amount\":{\"currency\":\"ghs\",\"value\":3005},\"product_id\":\"prod_123\",\"created_at\":\"2026-09-02T12:00:00Z\"}"
+            "{\"id\":\"pr_123\",\"active\":true,\"type\":\"fixed_amount\",\"fixed_amount\":{\"currency\":\"ghs\",\"value\":3005},\"product_id\":\"prod_123\",\"created_at\":\"2026-09-02T12:00:00Z\"}"
         );
         Assert.Equal("prod_123", catalogPrice!.ProductId);
+        Assert.Equal(3005, catalogPrice.FixedAmount!.Value);
         Assert.Equal(DateTimeOffset.Parse("2026-09-02T12:00:00Z"), catalogPrice.CreatedAt);
         Assert.Equal("\"mtn\"", networkJson);
         Assert.Equal("\"mobile_money\"", paymentMethodJson);
@@ -104,7 +105,7 @@ public class InttegroClientTests
         var selectedPrice = JsonSerializer.Deserialize<CatalogPrice>(
             "{\"id\":\"pr_donation\",\"active\":true,\"type\":\"customer_selected_amount\",\"customer_selected_amount\":{\"currency\":\"ghs\",\"minimum\":500},\"product_id\":\"prod_donation\",\"created_at\":\"2026-10-01T12:00:00Z\"}"
         )!;
-        Assert.Null(selectedPrice.Nominal);
+        Assert.Null(selectedPrice.FixedAmount);
         Assert.Equal(500, selectedPrice.CustomerSelectedAmount!.Minimum);
 
         var selectedProduct = new ProductDetailsParams

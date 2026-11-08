@@ -53,9 +53,6 @@ public sealed class ProductPriceSummary
     [JsonPropertyName("type")]
     public PriceType Type { get; set; }
 
-    [JsonPropertyName("nominal")]
-    public Amount? Nominal { get; set; }
-
     [JsonPropertyName("fixed_amount")]
     public Amount? FixedAmount { get; set; }
 
