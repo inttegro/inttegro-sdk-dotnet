@@ -12,7 +12,7 @@ public sealed class App
     [JsonPropertyName("created_at")] public DateTimeOffset? CreatedAt { get; set; }
     [JsonPropertyName("updated_at")] public DateTimeOffset? UpdatedAt { get; set; }
     [JsonPropertyName("archived_at")] public DateTimeOffset? ArchivedAt { get; set; }
-    [JsonPropertyName("capabilities")] public Dictionary<string, object?> Capabilities { get; set; } = new();
+    [JsonPropertyName("capabilities")] public AppCapabilityProjection Capabilities { get; set; } = new();
     [JsonPropertyName("children_policy")] public ChildrenPolicy? ChildrenPolicy { get; set; }
     [JsonPropertyName("secret_key")] public GeneratedSecretKey? SecretKey { get; set; }
     [JsonPropertyName("relationship")] public AppRelationship? Relationship { get; set; }
@@ -59,6 +59,12 @@ public sealed class AppCapabilities
 {
     [JsonPropertyName("payments")] public AppCapability Payments { get; set; } = null!;
     [JsonPropertyName("payouts")] public AppCapability Payouts { get; set; } = null!;
+}
+
+public sealed class AppCapabilityProjection
+{
+    [JsonPropertyName("payments")] public AppCapability? Payments { get; set; }
+    [JsonPropertyName("payouts")] public AppCapability? Payouts { get; set; }
 }
 
 public sealed class AppRelationshipPolicy
@@ -162,13 +168,16 @@ public sealed class ChimeEmailMessage
 
 public sealed class ChimeTransmission
 {
-    [JsonPropertyName("recipient")] public string? Recipient { get; set; }
-    [JsonPropertyName("sender_id")] public string? SenderId { get; set; }
-    [JsonPropertyName("sent_via")] public string? SentVia { get; set; }
-    [JsonPropertyName("status")] public string? Status { get; set; }
-    [JsonPropertyName("sent_at")] public DateTimeOffset? SentAt { get; set; }
+    [JsonPropertyName("address")] public string Address { get; set; } = null!;
+    [JsonPropertyName("created_at")] public DateTimeOffset CreatedAt { get; set; }
     [JsonPropertyName("delivered_at")] public DateTimeOffset? DeliveredAt { get; set; }
     [JsonPropertyName("failed_at")] public DateTimeOffset? FailedAt { get; set; }
+    [JsonPropertyName("initialized_at")] public DateTimeOffset InitializedAt { get; set; }
+    [JsonPropertyName("mechanism")] public string Mechanism { get; set; } = null!;
+    [JsonPropertyName("sent_at")] public DateTimeOffset? SentAt { get; set; }
+    [JsonPropertyName("sent_via")] public string? SentVia { get; set; }
+    [JsonPropertyName("status")] public string Status { get; set; } = null!;
+    [JsonPropertyName("suppressed_at")] public DateTimeOffset? SuppressedAt { get; set; }
 }
 
 public sealed class ChimePage
