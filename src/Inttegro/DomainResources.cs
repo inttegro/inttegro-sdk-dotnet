@@ -187,6 +187,25 @@ public sealed class ChimePage
     [JsonPropertyName("chimes")] public List<Chime>? Chimes { get; set; }
 }
 
+public sealed class ChimeSettings
+{
+    [JsonPropertyName("sms")] public ChimeSmsSettings Sms { get; set; } = null!;
+    [JsonPropertyName("email")] public ChimeEmailSettings Email { get; set; } = null!;
+}
+
+public sealed class ChimeSmsSettings
+{
+    [JsonPropertyName("default_sender")] public string DefaultSender { get; set; } = null!;
+    [JsonPropertyName("min_sender_char_len")] public int MinSenderCharLen { get; set; }
+    [JsonPropertyName("max_sender_char_len")] public int MaxSenderCharLen { get; set; }
+}
+
+public sealed class ChimeEmailSettings
+{
+    [JsonPropertyName("default_from")] public string DefaultFrom { get; set; } = null!;
+    [JsonPropertyName("allowed_from")] public List<string> AllowedFrom { get; set; } = new();
+}
+
 public sealed class ScheduledChime
 {
     [JsonPropertyName("id")] public string? Id { get; set; }

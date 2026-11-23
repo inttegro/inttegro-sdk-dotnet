@@ -1,5 +1,15 @@
 ## [Unreleased]
 
+## [14.0.0] - 2026-11-23
+
+- **Breaking:** removed provider-specific Chime delivery-event fields and the
+  internal email-event ingestion model from the public SDK.
+- **Breaking:** removed private document-delivery failure details and response
+  fields the API does not return.
+- Replaced known dictionary-shaped response data with typed application
+  capability and document-delivery models.
+- Added typed lookup of effective, non-secret Chime delivery settings.
+
 ## [13.1.0] - 2026-11-07
 
 - Added typed response-projection metadata with resource-level `Pick` and

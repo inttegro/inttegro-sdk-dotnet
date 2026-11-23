@@ -22,4 +22,7 @@ public class ChimesResource
 
     public Task<ChimePage> PageAsync(object? payload = null, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<ChimePage>("/chimes/page", "page", payload ?? new { }, cancellationToken);
+
+    public Task<ChimeSettings> SettingsAsync(CancellationToken cancellationToken = default) =>
+        _client.PostResourceAsync<ChimeSettings>("/chimes/settings", "settings", new { }, cancellationToken);
 }
