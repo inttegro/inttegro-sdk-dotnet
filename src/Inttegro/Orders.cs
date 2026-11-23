@@ -1,4 +1,3 @@
-using System.Text.Json;
 using System.Text.Json.Serialization;
 using Inttegro.BankAccounts;
 using Inttegro.Money;
@@ -321,7 +320,37 @@ public sealed class OrderReceipt
     public OrderReceiptFormat Format { get; set; } = new();
 
     [JsonPropertyName("delivery_summary")]
-    public JsonElement? DeliverySummary { get; set; }
+    public OrderDocumentDeliverySummary? DeliverySummary { get; set; }
+}
+
+public sealed class OrderDocumentDeliverySummary
+{
+    [JsonPropertyName("channels")]
+    public OrderDocumentDeliveryChannels Channels { get; set; } = new();
+
+    [JsonPropertyName("latest_sent_at")]
+    public DateTimeOffset LatestSentAt { get; set; }
+
+    [JsonPropertyName("total_count")]
+    public long TotalCount { get; set; }
+}
+
+public sealed class OrderDocumentDeliveryChannels
+{
+    [JsonPropertyName("email")]
+    public OrderDocumentDeliveryChannelSummary? Email { get; set; }
+
+    [JsonPropertyName("sms")]
+    public OrderDocumentDeliveryChannelSummary? Sms { get; set; }
+}
+
+public sealed class OrderDocumentDeliveryChannelSummary
+{
+    [JsonPropertyName("count")]
+    public long Count { get; set; }
+
+    [JsonPropertyName("latest_sent_at")]
+    public DateTimeOffset LatestSentAt { get; set; }
 }
 
 public sealed class OrderInvoice
@@ -455,7 +484,4 @@ public sealed class OrderDocumentDeliveryFailure
 {
     [JsonPropertyName("channel")]
     public string? Channel { get; set; }
-
-    [JsonPropertyName("error")]
-    public string? Error { get; set; }
 }

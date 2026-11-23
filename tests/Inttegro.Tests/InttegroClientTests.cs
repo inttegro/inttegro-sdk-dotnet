@@ -263,7 +263,11 @@ public class InttegroClientTests
         await client.PaymentMethods.ConfirmVerificationAsync(new { payment_method_id = "pm_1", token = "123456" });
         await client.PaymentMethods.LookupAsync("pm_1");
         await client.PaymentMethods.PageAsync(new { });
-        await client.PaymentMethods.UpdateAsync(new { payment_method_id = "pm_1", active = true });
+        await client.PaymentMethods.UpdateAsync(new PaymentMethodUpdateRequest
+        {
+            PaymentMethodId = "pm_1",
+            Active = true
+        });
         await client.PaymentMethods.ActivateAsync("pm_1");
         await client.PaymentMethods.ArchiveAsync("pm_1");
         await client.PaymentMethods.DisactivateAsync("pm_1");

@@ -58,9 +58,6 @@ public class PaymentMethodsResource
     public Task<PaymentMethodPage> PageAsync(PaymentMethodPageRequest payload, CancellationToken cancellationToken = default) =>
         _client.PostResourceAsync<PaymentMethodPage>("/payment_methods/page", "page", payload, cancellationToken);
 
-    public Task<PaymentMethod> UpdateAsync(object payload, CancellationToken cancellationToken = default) =>
-        _client.PostResourceAsync<PaymentMethod>("/payment_methods/update", "payment_method", payload, cancellationToken);
-
     public Task<PaymentMethod> UpdateAsync(PaymentMethodUpdateRequest payload, CancellationToken cancellationToken = default)
     {
         RequestValidator.Require(payload.PaymentMethodId, "payment_method_id");
