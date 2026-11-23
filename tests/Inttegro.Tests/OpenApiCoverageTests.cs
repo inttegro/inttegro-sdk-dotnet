@@ -57,6 +57,11 @@ public class OpenApiCoverageTests
                 break;
             }
 
+            if (!line.StartsWith("    /", StringComparison.Ordinal))
+            {
+                continue;
+            }
+
             var trimmed = line.TrimStart();
             if (!trimmed.StartsWith("/", StringComparison.Ordinal))
             {
